@@ -1,0 +1,32 @@
+{
+  "films": [
+    {
+      "image": "bad_boys.jpg",
+      "name": "Bad Boys for Life",
+      "category": "Action, Comedy, Crime",
+      "release": "January 7 2020",
+      "rating": 4
+    },
+    {
+      "image": "birds_of_prey.jpg",
+      "name": "Birds of Prey: And the Fantabulous Emancipation of One Harley Quinn",
+      "category": " Action, Adventure, Crime",
+      "release": "25 January 2020",
+      "rating": 4
+    },
+    {
+      "image": "blood_shot.jpg",
+      "name": "Bloodshot",
+      "category": "Action, Drama, Sci-Fi",
+      "release": "20 February 2020",
+      "rating": 4
+    },
+    {
+      "image": "extraction.jpg",
+      "name": "Extraction",
+      "category": "Action",
+      "release": "24 April 2020",
+      "rating": 4
+    }
+  ]
+}

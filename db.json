@@ -5,28 +5,116 @@
       "name": "Bad Boys for Life",
       "category": "Action, Comedy, Crime",
       "release": "January 7 2020",
-      "rating": 4
+      "rating": 6.8,
+      "id": "25b7Eq",
+      "story": "Miami detectives Mike Lowrey and Marcus Burnett must face off against a mother-and-son pair of drug lords who wreak vengeful havoc on their city.",
+      "director":  "Adil El Arbi" ,
+      "writers": "Peter Craig (story), Joe Carnahan (story)",
+      "actors": [
+        { "actors_name": "Will Smith", "actors_image": "Will_Smith.jpg", "character":"Detective Mike Lowrey" },
+        { "actors_name":"Martin Lawrence", "actors_image": "Martin_Lawrence.jpg", "character":"Detective Marcus Burnett" },
+        { "actors_name":"Vanessa Hudgens", "actors_image": "Vanessa_Hudgens.jpg", "character":"Kelly" },
+        { "actors_name":"Alexander Ludwig", "actors_image": "Alexander_Ludwig.jpg", "character":"Dorn" },
+        { "actors_name":"Paola Nuñez", "actors_image": "Paola_Nuñez.jpg", "character":"Rita" }]
     },
     {
       "image": "birds_of_prey.jpg",
       "name": "Birds of Prey: And the Fantabulous Emancipation of One Harley Quinn",
       "category": " Action, Adventure, Crime",
       "release": "25 January 2020",
-      "rating": 4
+      "rating": 6.2,
+      "id": "xX5Q3W",
+      "story": "After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.",
+      "director":  "Cathy Yan" ,
+      "writers": " Christina Hodson, Paul Dini"
     },
     {
       "image": "blood_shot.jpg",
       "name": "Bloodshot",
       "category": "Action, Drama, Sci-Fi",
       "release": "20 February 2020",
-      "rating": 4
+      "rating": 5.7,
+      "id": "JHJzxR",
+      "story": "Ray Garrison, a slain soldier, is re-animated with superpowers.",
+      "director":  " Dave Wilson" ,
+      "writers": " Jeff Wadlow (screenplay by), Eric Heisserer (screenplay by)"
     },
     {
       "image": "extraction.jpg",
       "name": "Extraction",
       "category": "Action",
       "release": "24 April 2020",
-      "rating": 4
+      "rating": 6.9,
+      "id": "gqj5ur",
+      "story": "Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's enlisted to rescue the kidnapped son of an imprisoned international crime lord.",
+      "director":  "Sam Hargrave" ,
+      "writers": " Joe Russo (screenplay by), Ande Parks"
+    },
+    {
+      "image": "my_spy.jpg",
+      "name": "My Spy",
+      "category": "Action",
+      "release": "24 April 2020",
+      "rating": 6.1,
+      "id": "EpcUQQ",
+      "story": "A hardened CIA operative finds himself at the mercy of a precocious 9-year-old girl, having been sent undercover to surveil her family.",
+      "director":  "Peter Segal" ,
+      "writers": " Erich Hoeber, Jon Hoeber"
+    },
+    {
+      "image": "sonic.jpg",
+      "name": "Sonic the Hedgehog",
+      "category": "Action, Adventure, Comedy",
+      "release": "25 January 2020",
+      "rating": 6.6,
+      "id": "fAl2xK",
+      "story": "After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.",
+      "director":  "Jeff Fowler" ,
+      "writers": " Patrick Casey (as Pat Casey), Josh Miller"
+    },
+    {
+      "image": "the_way-back.jpg",
+      "name": "The Way Back",
+      "category": " Drama, Sport",
+      "release": "5 March 2020",
+      "rating": 6.8,
+      "id": "6OAo23",
+      "story": "Jack Cunningham was an HS basketball phenom who walked away from the game, forfeiting his future.Years later, when he reluctantly accepts a coaching job at his alma mater, he may get one last shot at redemption.",
+      "director":  "Gavin O'Connor" ,
+      "writers": "Brad Ingelsby"
+    },
+    {
+      "image": "theGentlemen.jpg",
+      "name": "The Gentlemen",
+      "category": "Action, Comedy, Crime",
+      "release": "3 December 2019",
+      "rating": 8.0,
+      "id": "Te56Xp",
+      "story": "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+      "director":  "Guy Ritchie" ,
+      "writers": "Guy Ritchie (story), Ivan Atkinson (story)"
+    },
+    {
+      "image": "star_wars.jpg",
+      "name": "Star Wars: Episode IX - The Rise of Skywalker ",
+      "category": "Action, Adventure, Fantasy",
+      "release": "16 December 2019",
+      "rating": 6.1,
+      "id": "f8jTya",
+      "story": "The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.",
+      "director":  " J.J. Abrams" ,
+      "writers": "Chris Terrio (screenplay by), J.J. Abrams (screenplay by)"
+    },
+    {
+      "image": "onward.jpg",
+      "name": "Onward",
+      "category": "Animation, Adventure, Comedy",
+      "release": "21 February 2020",
+      "rating": 7.5,
+      "id": "1usoa5",
+      "story": "Two elven brothers embark on a quest to bring their father back for one day.",
+      "director":  "Dan Scanlon" ,
+      "writers": " Dan Scanlon (original story by), Keith Bunin (original story by)"
     }
   ]
 }

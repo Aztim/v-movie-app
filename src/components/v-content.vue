@@ -9,11 +9,13 @@
           v-for="(film, index) in films"
           :key="index"
         >
-          <a>
+          <router-link :to="{ name:'film', params:{ id:film.id }}">
             <img :src="require('../assets/films/' + film.image)" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
-          </a>
+          </router-link>
           <div class="mt-2">
-            <a href="" class="text-lg mt-2 hover:text-gray:300">{{ film.name }}</a>
+            <router-link :to="{ name:'film', params:{ id:film.id }}" class="text-lg mt-2 hover:text-gray:300">
+              {{ film.name }}
+            </router-link>
             <div class="flex items-center text-gray-400 text-sm mt-1">
               <i class="fas fa-star"></i>
               <span class="ml-1">{{ film.rating }}</span>
@@ -31,42 +33,48 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+// import { mapActions } from 'vuex'
+import { getVideoData } from '../video-mixin'
 export default {
   name: 'Content',
-  data () {
-    return {
-      films: []
-    }
-  },
-  computed: {
-    // ...mapGetters([
-    //   'FILMS'
-    // ])
-  },
-  methods: {
-    ...mapActions([
-      'GET_FILMS_FROM_API'
-    ])
-  },
-  mounted () {
-    this.GET_FILMS_FROM_API()
-      .then((responce) => {
-        if (responce.data) {
-          for (const item of responce.data) {
-            console.log(item)
-            this.films.push(item)
-          }
-          // this.films.push(responce.data)
-          // this.sortByCategories()
-          // this.sortedProductsBySearchValue(this.SEARCH_VALUE)
-        }
-      })
-  }
+  // props: {
+  //   film_data: {
+  //     type: Array,
+  //     default () {
+  //       return []
+  //     }
+  //   }
+  // },
+  // data () {
+  //   return {
+  //     films: []
+  //   }
+  // },
+  mixins: [getVideoData]
+  // computed: {
+  //   // ...mapGetters([
+  //   //   'FILMS'
+  //   // ])
+  // }
+  // methods: {
+  //   ...mapActions([
+  //     'GET_FILMS_FROM_API'
+  //   ])
+  // },
+  // created () {
+  //   this.GET_FILMS_FROM_API()
+  //     .then((responce) => {
+  //       if (responce.data) {
+  //         for (const item of responce.data) {
+  //           this.films.push(item)
+  //         }
+  //       }
+  //     })
+  // }
 }
 </script>
 
-<style scoped>
+<style>
   .fas {
     color: yellow;
   }

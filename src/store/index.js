@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import actions from './actions'
 import mutations from './mutations'
-// import getters from './getters'
+import getters from './getters'
 
 Vue.use(Vuex)
 
@@ -11,5 +11,6 @@ export default new Vuex.Store({
     films: []
   },
   actions,
-  mutations
+  mutations,
+  getters
 })

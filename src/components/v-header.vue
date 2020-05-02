@@ -20,11 +20,12 @@
       </ul>
       <div class="flex flex-col md:flex-row items-center">
         <div class="relative">
-          <input
+          <!-- <input
             type="text"
             class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
             placeholder="Search"
-          >
+          > -->
+          <SearchDropDown/>
           <div class="absolute top-0">
             <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
           </div>
@@ -38,7 +39,9 @@
 </template>
 
 <script>
+import SearchDropDown from './v-search-dropdown.vue'
 export default {
+  components: { SearchDropDown },
   name: 'Header',
   data () {
     return {

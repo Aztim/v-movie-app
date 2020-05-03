@@ -32,14 +32,9 @@
             </div>
           </div>
         </div>
-
-        <div class="mt-12">
-          <button  class="flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-4 hover:bg-orange-600 transition ease-in-out duration-150">
-            <i class="far fa-play-circle"></i>
-            <span class="ml-2">Play Trailer</span>
-            <!-- <router-link to="https://www.youtube.com/watch?v=DjOaTOFgVzg"></router-link> -->
-          </button>
-        </div>
+        <VideoWindow
+          :film_trailer="film.trailer"
+        />
       </div>
     </div>
   </div>
@@ -57,11 +52,12 @@
 <script>
 // import { video } from '../video-mixin'
 // import { mapGetters } from 'vuex'
+import VideoWindow from './v-film-video-window.vue'
 import Actors from './v-film-actors.vue'
 import FilmImages from './v-film-images.vue'
 export default {
   name: 'film-item',
-  components: { Actors, FilmImages },
+  components: { VideoWindow, Actors, FilmImages },
   props: {
     id: {
       type: String,

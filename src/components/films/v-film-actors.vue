@@ -9,8 +9,7 @@
             :key="index"
           >
             <!-- <router-link> -->
-              <img :src="require('../../assets/actors/' + film_actor.actors_image)" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
-              <!-- <img :src="require('../../assets/actors/' + film_actor.actors_image)" alt="" class="hover:opacity-75 transition ease-in-out duration-150"> -->
+              <img :src="require('../../assets/actors_pictures/' + film_actor.actors_name + '.jpg')" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
             <!-- </router-link> -->
             <div class="mt-2">
                 <!-- <router-link  class="text-lg mt-2 hover:text-gray:300"> -->

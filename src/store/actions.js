@@ -11,5 +11,27 @@ export default {
         console.log(error)
         return error
       })
+  },
+  GET_ACTORS_FROM_API ({ commit }) {
+    return axios.get('http://localhost:3000/actors')
+      .then((response) => {
+        commit('SET_FILMS_TO_STATE', response.data)
+        return response
+      })
+      .catch((error) => {
+        console.log(error)
+        return error
+      })
+  },
+  GET_TV_FROM_API ({ commit }) {
+    return axios.get('http://localhost:3000/tv')
+      .then((response) => {
+        commit('SET_FILMS_TO_STATE', response.data)
+        return response
+      })
+      .catch((error) => {
+        console.log(error)
+        return error
+      })
   }
 }

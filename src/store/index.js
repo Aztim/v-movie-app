@@ -8,7 +8,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    films: []
+    films: [],
+    actors: [],
+    tv_shows: []
   },
   actions,
   mutations,

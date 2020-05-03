@@ -10,22 +10,16 @@
       "story": "Miami detectives Mike Lowrey and Marcus Burnett must face off against a mother-and-son pair of drug lords who wreak vengeful havoc on their city.",
       "director":  "Adil El Arbi" ,
       "writers": "Peter Craig (story), Joe Carnahan (story)",
+      "trailer": "https://www.youtube.com/embed/jKCj3XuPG8M",
       "actors": [
-        { "actors_name": "Will Smith", "actors_image": "bad_boys/Will_Smith.jpg", "character":"Detective Mike Lowrey" },
-        { "actors_name":"Martin Lawrence", "actors_image": "bad_boys/Martin_Lawrence.jpg", "character":"Detective Marcus Burnett" },
-        { "actors_name":"Vanessa Hudgens", "actors_image": "bad_boys/Vanessa_Hudgens.jpg", "character":"Kelly" },
-        { "actors_name":"Alexander Ludwig", "actors_image": "bad_boys/Alexander_Ludwig.jpg", "character":"Dorn" },
-        { "actors_name":"Paola Nuñez", "actors_image": "bad_boys/Paola_Nuñez.jpg", "character":"Rita" }],
+        { "actors_name": "Will Smith", "character":"Detective Mike Lowrey" },
+        { "actors_name":"Martin Lawrence", "character":"Detective Marcus Burnett" },
+        { "actors_name":"Vanessa Hudgens", "character":"Kelly" },
+        { "actors_name":"Alexander Ludwig", "character":"Dorn" },
+        { "actors_name":"Paola Nuñez", "character":"Rita" }],
       "film_images": [
-        {"f_image":"bad_boys/1.jpg"},
-        {"f_image":"bad_boys/2.jpg"},
-        {"f_image":"bad_boys/3.jpg"},
-        {"f_image":"bad_boys/4.jpg"},
-        {"f_image":"bad_boys/5.jpg"},
-        {"f_image":"bad_boys/6.jpg"},
-        {"f_image":"bad_boys/7.jpg"},
-        {"f_image":"bad_boys/8.jpg"},
-        {"f_image":"bad_boys/9.jpg"}
+        "bad_boys/1","bad_boys/2","bad_boys/3","bad_boys/4","bad_boys/5","bad_boys/6","bad_boys/7","bad_boys/8","bad_boys/9"
+  
       ]
     },
     {
@@ -38,22 +32,16 @@
       "story": "After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.",
       "director":  "Cathy Yan" ,
       "writers": " Christina Hodson, Paul Dini",
+      "trailer": "https://www.youtube.com/embed/kGM4uYZzfu0",
       "actors": [
-        { "actors_name":"Margot Robbie", "actors_image": "birds_of_prey/Margot_Robbie.jpg", "character":"Harleen Quinzel / Harley Quinn" },
-        { "actors_name":"Ewan McGregor", "actors_image": "birds_of_prey/Ewan_McGregor.jpg", "character":"Roman Sionis / Black Mask" },
-        { "actors_name":"Mary Elizabeth Winstead", "actors_image": "birds_of_prey/Mary_Elizabeth_Winstead.jpg", "character":"Helena Bertinelli / Huntress" },
-        { "actors_name":"Jurnee Smollett-Bell", "actors_image": "birds_of_prey/Jurnee_Smollett-Bell.jpg", "character":"Dinah Lance / Black Canary" },
-        { "actors_name":"Rosie Perez", "actors_image": "birds_of_prey/Rosie_Perez.jpg", "character":"Rosie Perez" }],
+        { "actors_name":"Margot Robbie", "character":"Harleen Quinzel / Harley Quinn" },
+        { "actors_name":"Ewan McGregor", "character":"Roman Sionis / Black Mask" },
+        { "actors_name":"Mary Elizabeth Winstead", "character":"Helena Bertinelli / Huntress" },
+        { "actors_name":"Jurnee Smollett-Bell", "character":"Dinah Lance / Black Canary" },
+        { "actors_name":"Rosie Perez", "character":"Rosie Perez" }],
       "film_images": [
-        {"f_image":"birds_of_prey/1.jpg"},
-        {"f_image":"birds_of_prey/2.jpg"},
-        {"f_image":"birds_of_prey/3.jpg"},
-        {"f_image":"birds_of_prey/4.jpg"},
-        {"f_image":"birds_of_prey/5.jpg"},
-        {"f_image":"birds_of_prey/6.jpg"},
-        {"f_image":"birds_of_prey/7.jpg"},
-        {"f_image":"birds_of_prey/8.jpg"},
-        {"f_image":"birds_of_prey/9.jpg"}
+        "birds_of_prey/1", "birds_of_prey/2", "birds_of_prey/3", "birds_of_prey/4", "birds_of_prey/5", 
+        "birds_of_prey/6", "birds_of_prey/7", "birds_of_prey/8", "birds_of_prey/9"
       ]
     },
     {
@@ -66,22 +54,15 @@
       "story": "Ray Garrison, a slain soldier, is re-animated with superpowers.",
       "director":  " Dave Wilson" ,
       "writers": " Jeff Wadlow (screenplay by), Eric Heisserer (screenplay by)",
+      "trailer": "https://www.youtube.com/embed/vOUVVDWdXbo",
       "actors": [
-        { "actors_name":"Vin Diesel", "actors_image": "bloodshot/Vin_Diesel.jpg", "character":"Ray Garrison / Bloodshot" },
-        { "actors_name":"Eiza González", "actors_image": "bloodshot/Eiza_González.jpg", "character":"KT" },
-        { "actors_name":"Sam Heughan", "actors_image": "bloodshot/Sam_Heughan.jpg", "character":"Jimmy Dalton" },
-        { "actors_name":"Toby Kebbell", "actors_image": "bloodshot/Toby_Kebbell.jpg", "character":"Martin Axe" },
-        { "actors_name":"Talulah Riley", "actors_image": "bloodshot/Talulah_Riley.jpg", "character":"Gina Garrison" }],
+        { "actors_name":"Vin Diesel", "character":"Ray Garrison / Bloodshot" },
+        { "actors_name":"Eiza González", "character":"KT" },
+        { "actors_name":"Sam Heughan", "character":"Jimmy Dalton" },
+        { "actors_name":"Toby Kebbell", "character":"Martin Axe" },
+        { "actors_name":"Talulah Riley", "character":"Gina Garrison" }],
       "film_images": [
-        {"f_image":"bloodshot/1.jpg"},
-        {"f_image":"bloodshot/2.jpg"},
-        {"f_image":"bloodshot/3.jpg"},
-        {"f_image":"bloodshot/4.jpg"},
-        {"f_image":"bloodshot/5.jpg"},
-        {"f_image":"bloodshot/6.jpg"},
-        {"f_image":"bloodshot/7.jpg"},
-        {"f_image":"bloodshot/8.jpg"},
-        {"f_image":"bloodshot/9.jpg"}
+        "bloodshot/1","bloodshot/2","bloodshot/3","bloodshot/4","bloodshot/5","bloodshot/6","bloodshot/7","bloodshot/8","bloodshot/9"
       ]
     },
     {
@@ -94,22 +75,15 @@
       "story": "Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's enlisted to rescue the kidnapped son of an imprisoned international crime lord.",
       "director":  "Sam Hargrave" ,
       "writers": " Joe Russo (screenplay by), Ande Parks",
+      "trailer": "https://www.youtube.com/embed/L6P3nI6VnlY",
       "actors": [
-        { "actors_name":"Chris Hemsworth", "actors_image": "extraction/Chris Hemsworth.jpg", "character":"Tyler Rake" },
-        { "actors_name":"Rudhraksh Jaiswal", "actors_image": "extraction/Rudhraksh Jaiswal.jpg", "character":"Ovi Mahajan" },
-        { "actors_name":"Randeep Hooda", "actors_image": "extraction/Randeep Hooda.jpg", "character":"Saju" },
-        { "actors_name":"Golshifteh Farahani", "actors_image": "extraction/Golshifteh Farahani.jpg", "character":"Nik Khan" },
-        { "actors_name":"Pankaj Tripathi", "actors_image": "extraction/Pankaj Tripathi.jpg", "character":"Ovi Mahajan Sr." }],
+        { "actors_name":"Chris Hemsworth", "character":"Tyler Rake" },
+        { "actors_name":"Rudhraksh Jaiswal", "character":"Ovi Mahajan" },
+        { "actors_name":"Randeep Hooda", "character":"Saju" },
+        { "actors_name":"Golshifteh Farahani", "character":"Nik Khan" },
+        { "actors_name":"Pankaj Tripathi", "character":"Ovi Mahajan Sr." }],
       "film_images": [
-        {"f_image":"extraction/1.jpg"},
-        {"f_image":"extraction/2.jpg"},
-        {"f_image":"extraction/3.jpg"},
-        {"f_image":"extraction/4.jpg"},
-        {"f_image":"extraction/5.jpg"},
-        {"f_image":"extraction/6.jpg"},
-        {"f_image":"extraction/7.jpg"},
-        {"f_image":"extraction/8.jpg"},
-        {"f_image":"extraction/9.jpg"}
+        "extraction/1","extraction/2","extraction/3","extraction/4","extraction/5","extraction/6","extraction/7","extraction/8","extraction/9"
       ]
     },
     {
@@ -122,22 +96,15 @@
       "story": "A hardened CIA operative finds himself at the mercy of a precocious 9-year-old girl, having been sent undercover to surveil her family.",
       "director":  "Peter Segal" ,
       "writers": " Erich Hoeber, Jon Hoeber",
+      "trailer": "https://www.youtube.com/embed/pfAhQSz-j_o",
       "actors": [
-        { "actors_name":"Dave Bautista", "actors_image": "my_spy/Dave Bautista.jpg", "character":"JJ" },
-        { "actors_name":"Chloe Coleman", "actors_image": "my_spy/Chloe Coleman.jpg", "character":"Sophie" },
-        { "actors_name":"Kristen Schaal", "actors_image": "my_spy/Kristen Schaal.jpg", "character":"Bobbi" },
-        { "actors_name":"Parisa Fitz-Henley", "actors_image": "my_spy/Parisa Fitz-Henley.jpg", "character":"Nik Khan" },
-        { "actors_name":"Ken Jeong", "actors_image": "my_spy/Ken Jeong.jpg", "character":"Kim" }],
+        { "actors_name":"Dave Bautista", "character":"JJ" },
+        { "actors_name":"Chloe Coleman", "character":"Sophie" },
+        { "actors_name":"Kristen Schaal", "character":"Bobbi" },
+        { "actors_name":"Parisa Fitz-Henley", "character":"Nik Khan" },
+        { "actors_name":"Ken Jeong", "character":"Kim" }],
       "film_images": [
-        {"f_image":"my_spy/1.jpg"},
-        {"f_image":"my_spy/2.jpg"},
-        {"f_image":"my_spy/3.jpg"},
-        {"f_image":"my_spy/4.jpg"},
-        {"f_image":"my_spy/5.jpg"},
-        {"f_image":"my_spy/6.jpg"},
-        {"f_image":"my_spy/7.jpg"},
-        {"f_image":"my_spy/8.jpg"},
-        {"f_image":"my_spy/9.jpg"}
+        "my_spy/1","my_spy/2","my_spy/3","my_spy/4","my_spy/5","my_spy/6","my_spy/7","my_spy/8","my_spy/9"
       ]
     },
     {
@@ -150,22 +117,16 @@
       "story": "After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.",
       "director":  "Jeff Fowler" ,
       "writers": " Patrick Casey (as Pat Casey), Josh Miller",
+      "trailer": "https://www.youtube.com/embed/szby7ZHLnkA",
       "actors": [
-        { "actors_name":"Ben Schwartz", "actors_image": "sonic_the_hedgehog/Ben Schwartz.jpg", "character":"Sonic the Hedgehog (voice)" },
-        { "actors_name":"James Marsden", "actors_image": "sonic_the_hedgehog/James Marsden.jpg", "character":"Thomas Michael|Tom Wachowski" },
-        { "actors_name":"Jim Carrey", "actors_image": "sonic_the_hedgehog/Jim Carrey.jpg", "character":"Dr. Ivo Eggman Robotnik" },
-        { "actors_name":"Tika Sumpter", "actors_image": "sonic_the_hedgehog/Tika Sumpter.jpg", "character":"Maddie Wachowski" },
-        { "actors_name":"Natasha Rothwell", "actors_image": "sonic_the_hedgehog/Natasha Rothwell.jpg", "character":"Rachel" }],
+        { "actors_name":"Ben Schwartz", "character":"Sonic the Hedgehog (voice)" },
+        { "actors_name":"James Marsden", "character":"Thomas Michael|Tom Wachowski" },
+        { "actors_name":"Jim Carrey", "character":"Dr. Ivo Eggman Robotnik" },
+        { "actors_name":"Tika Sumpter", "character":"Maddie Wachowski" },
+        { "actors_name":"Natasha Rothwell", "character":"Rachel" }],
       "film_images": [
-        {"f_image":"sonic_the_hedgehog/1.jpg"},
-        {"f_image":"sonic_the_hedgehog/2.jpg"},
-        {"f_image":"sonic_the_hedgehog/3.jpg"},
-        {"f_image":"sonic_the_hedgehog/4.jpg"},
-        {"f_image":"sonic_the_hedgehog/5.jpg"},
-        {"f_image":"sonic_the_hedgehog/6.jpg"},
-        {"f_image":"sonic_the_hedgehog/7.jpg"},
-        {"f_image":"sonic_the_hedgehog/8.jpg"},
-        {"f_image":"sonic_the_hedgehog/9.jpg"}
+        "sonic_the_hedgehog/1","sonic_the_hedgehog/2","sonic_the_hedgehog/3","sonic_the_hedgehog/4","sonic_the_hedgehog/5","sonic_the_hedgehog/6",
+        "sonic_the_hedgehog/7","sonic_the_hedgehog/8","sonic_the_hedgehog/9"
       ]
     },
     {
@@ -178,22 +139,15 @@
       "story": "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
       "director":  "Guy Ritchie" ,
       "writers": "Matthew McConaughey, Charlie Hunnam, Michelle Dockery",
+      "trailer": "https://www.youtube.com/embed/2B0RpUGss2c",
       "actors": [
-        { "actors_name":"Matthew McConaughey", "actors_image": "the_gentlemen/Matthew McConaughey.jpg", "character":"Mickey Pearson" },
-        { "actors_name":"Charlie Hunnam", "actors_image": "the_gentlemen/Charlie Hunnam.jpg", "character":"Raymond" },
-        { "actors_name":"Henry Golding", "actors_image": "the_gentlemen/Henry Golding.jpg", "character":"Dry Eye" },
-        { "actors_name":"Michelle Dockery", "actors_image": "the_gentlemen/Michelle Dockery.jpg", "character":"Rosalind" },
-        { "actors_name":"Jeremy Strong", "actors_image": "the_gentlemen/Jeremy Strong.jpg", "character":"Cannabis Kingpin Matthew" }],
+        { "actors_name":"Matthew McConaughey", "character":"Mickey Pearson" },
+        { "actors_name":"Charlie Hunnam", "character":"Raymond" },
+        { "actors_name":"Henry Golding", "character":"Dry Eye" },
+        { "actors_name":"Michelle Dockery", "character":"Rosalind" },
+        { "actors_name":"Jeremy Strong", "character":"Cannabis Kingpin Matthew" }],
       "film_images": [
-        {"f_image":"the_gentlemen/1.jpg"},
-        {"f_image":"the_gentlemen/2.jpg"},
-        {"f_image":"the_gentlemen/3.jpg"},
-        {"f_image":"the_gentlemen/4.jpg"},
-        {"f_image":"the_gentlemen/5.jpg"},
-        {"f_image":"the_gentlemen/6.jpg"},
-        {"f_image":"the_gentlemen/7.jpg"},
-        {"f_image":"the_gentlemen/8.jpg"},
-        {"f_image":"the_gentlemen/9.jpg"}
+        "the_gentlemen/1","the_gentlemen/2","the_gentlemen/3","the_gentlemen/4","the_gentlemen/5","the_gentlemen/6","the_gentlemen/7","the_gentlemen/8","the_gentlemen/9"
       ]
     },
     {
@@ -206,22 +160,15 @@
       "story": "A physician who can talk to animals embarks on an adventure to find a legendary island with a young apprentice and a crew of strange pets",
       "director":  "Stephen Gaghan" ,
       "writers": "Stephen Gaghan, Dan Gregor",
+      "trailer": "https://www.youtube.com/embed/hej47fWFLQs",
       "actors": [
-        { "actors_name":"Robert Downey Jr.", "actors_image": "dolittle/Robert Downey Jr.jpg", "character":"Dr. John Dolittle" },
-        { "actors_name":"Antonio Banderas", "actors_image": "dolittle/Antonio Banderas.jpg", "character":"King Rassouli" },
-        { "actors_name":"Michael Sheen", "actors_image": "dolittle/Michael Sheen.jpg", "character":"Dr. Blair Müdfly" },
-        { "actors_name":"Jim Broadbent", "actors_image": "dolittle/Jim Broadbent.jpg", "character":"Lord Thomas Badgley" },
-        { "actors_name":"Jessie Buckley", "actors_image": "dolittle/Jessie Buckley.jpg", "character":"Queen Victoria" }],
+        { "actors_name":"Robert Downey Jr.", "character":"Dr. John Dolittle" },
+        { "actors_name":"Antonio Banderas", "character":"King Rassouli" },
+        { "actors_name":"Michael Sheen", "character":"Dr. Blair Müdfly" },
+        { "actors_name":"Jim Broadbent", "character":"Lord Thomas Badgley" },
+        { "actors_name":"Jessie Buckley", "character":"Queen Victoria" }],
       "film_images": [
-        {"f_image":"dolittle/1.jpg"},
-        {"f_image":"dolittle/2.jpg"},
-        {"f_image":"dolittle/3.jpg"},
-        {"f_image":"dolittle/4.jpg"},
-        {"f_image":"dolittle/5.jpg"},
-        {"f_image":"dolittle/6.jpg"},
-        {"f_image":"dolittle/7.jpg"},
-        {"f_image":"dolittle/8.jpg"},
-        {"f_image":"dolittle/9.jpg"}
+        "dolittle/1","dolittle/2","dolittle/3","dolittle/4","dolittle/5","dolittle/6","dolittle/7","dolittle/8","dolittle/9"
       ]
     },
     {
@@ -234,22 +181,15 @@
       "story": "The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.",
       "director":  " J.J. Abrams" ,
       "writers": "Chris Terrio (screenplay by), J.J. Abrams (screenplay by)",
+      "trailer": "https://www.youtube.com/embed/8Qn_spdM5Zg",
       "actors": [
-        { "actors_name":"Carrie Fisher.", "actors_image": "star_wars/Carrie Fisher.jpg", "character":"General Leia Organa" },
-        { "actors_name":"Mark Hamill", "actors_image": "star_wars/Mark Hamill.jpg", "character":"Luke Skywalker" },
-        { "actors_name":"Daisy Ridley", "actors_image": "star_wars/Daisy Ridley.jpg", "character":"Rey" },
-        { "actors_name":"Adam Driver", "actors_image": "star_wars/Adam Driver.jpg", "character":"Kylo Ren / Ben Solo" },
-        { "actors_name":"John Boyega", "actors_image": "star_wars/John Boyega.jpg", "character":"Finn" }],
+        { "actors_name":"Carrie Fisher", "character":"General Leia Organa" },
+        { "actors_name":"Mark Hamill", "character":"Luke Skywalker" },
+        { "actors_name":"Daisy Ridley", "character":"Rey" },
+        { "actors_name":"Adam Driver", "character":"Kylo Ren / Ben Solo" },
+        { "actors_name":"John Boyega", "character":"Finn" }],
       "film_images": [
-        {"f_image":"star_wars/1.jpg"},
-        {"f_image":"star_wars/2.jpg"},
-        {"f_image":"star_wars/3.jpg"},
-        {"f_image":"star_wars/4.jpg"},
-        {"f_image":"star_wars/5.jpg"},
-        {"f_image":"star_wars/6.jpg"},
-        {"f_image":"star_wars/7.jpg"},
-        {"f_image":"star_wars/8.jpg"},
-        {"f_image":"star_wars/9.jpg"}
+        "star_wars/1","star_wars/2","star_wars/3","star_wars/4","star_wars/5","star_wars/6","star_wars/7","star_wars/8","star_wars/9"
       ]
     },
     {
@@ -262,22 +202,241 @@
       "story": "Two elven brothers embark on a quest to bring their father back for one day.",
       "director":  "Dan Scanlon" ,
       "writers": " Dan Scanlon (original story by), Keith Bunin (original story by)",
+      "trailer": "https://www.youtube.com/embed/gn5QmllRCn4",
       "actors": [
-        { "actors_name":"Tom Holland.", "actors_image": "onward/Tom Holland.jpg", "character":"Ian Lightfoot (voice)" },
-        { "actors_name":"Chris Pratt", "actors_image": "onward/Chris Pratt.jpg", "character":"Barley Lightfoot (voice)" },
-        { "actors_name":"Julia Louis-Dreyfus", "actors_image": "onward/Julia Louis-Dreyfus.jpg", "character":"Laurel Lightfoot (voice)" },
-        { "actors_name":"Octavia Spencer", "actors_image": "onward/Octavia Spencer.jpg", "character":"The Manticore (voice)" },
-        { "actors_name":"Mel Rodriguez", "actors_image": "onward/Mel Rodriguez.jpg", "character":"Officer Colt Bronco (voice)" }],
+        { "actors_name":"Tom Holland", "character":"Ian Lightfoot (voice)" },
+        { "actors_name":"Chris Pratt", "character":"Barley Lightfoot (voice)" },
+        { "actors_name":"Julia Louis-Dreyfus", "character":"Laurel Lightfoot (voice)" },
+        { "actors_name":"Octavia Spencer", "character":"The Manticore (voice)" },
+        { "actors_name":"Mel Rodriguez", "character":"Officer Colt Bronco (voice)" }],
       "film_images": [
-        {"f_image":"onward/1.jpg"},
-        {"f_image":"onward/2.jpg"},
-        {"f_image":"onward/3.jpg"},
-        {"f_image":"onward/4.jpg"},
-        {"f_image":"onward/5.jpg"},
-        {"f_image":"onward/6.jpg"},
-        {"f_image":"onward/7.jpg"},
-        {"f_image":"onward/8.jpg"},
-        {"f_image":"onward/9.jpg"}
+        "onward/1","onward/2","onward/3","onward/4","onward/5","onward/6","onward/7","onward/8","onward/9"
+      ]
+    }
+  ],
+
+  "actors": [
+    "Will Smith", "Martin Lawrence", "Vanessa Hudgens", "Alexander Ludwig", "Paola Nuñez","Margot Robbie","Ewan McGregor","Mary Elizabeth Winstead",
+    "Jurnee Smollett-Bell","Rosie Perez","Vin Diesel","Eiza González","Sam Heughan","Toby Kebbell","Talulah Riley","Chris Hemsworth","Rudhraksh Jaiswal",
+    "Randeep Hooda","Golshifteh Farahani","Pankaj Tripathi","Dave Bautista","Chloe Coleman","Kristen Schaal","Parisa Fitz-Henley","Ken Jeong","Ben Schwartz",
+    "James Marsden","Jim Carrey","Tika Sumpter","Natasha Rothwell","Matthew McConaughey","Charlie Hunnam","Henry Golding","Michelle Dockery","Jeremy Strong",
+    "Robert Downey Jr.","Antonio Banderas","Michael Sheen","Jim Broadbent","Jessie Buckley","Carrie Fisher","Mark Hamill","Daisy Ridley","Adam Driver",
+    "John Boyega","Tom Holland","Chris Pratt","Julia Louis-Dreyfus","Octavia Spencer","Mel Rodriguez"
+  ],
+
+  "tv": [
+    {
+      "image": "Billions.jpg",
+      "name": "Billions",
+      "category": "Drama",
+      "release": "Jan 17 2016",
+      "rating": 8.4,
+      "id": "07FYwn",
+      "story": "U.S. Attorney Chuck Rhoades goes after hedge fund king Bobby 'Axe' Axelrod in a battle between two powerful New York figures.",
+      "director":  "Brian Koppelman" ,
+      "writers": "David Levien, Andrew Ross Sorkin",
+      "trailer": "https://www.youtube.com/embed/aILMB1h8x7I",
+      "actors": [
+        { "actors_name": "Paul Giamatti", "character":"Charles 'Chuck' Rhoades Jr." },
+        { "actors_name":"Damian Lewis", "character":"Bobby 'Axe' Axelrod" },
+        { "actors_name":"Maggie Siff", "character":"Wendy Rhoades" },
+        { "actors_name":"David Costabile", "character":"Michael 'Wags' Wagner" },
+        { "actors_name":"Condola Rashad", "character":"Kate Sacker" }],
+      "tv_shows_images": [
+        "Billions/1","Billions/2","Billions/3","Billions/4","Billions/5",
+        "Billions/6","Billions/7","Billions/8","Billions/9"
+  
+      ]
+    },
+    {
+      "image": "Breaking Bad.jpg",
+      "name": "Breaking Bad",
+      "category": " Action, Adventure, Crime",
+      "release": "25 January 2020",
+      "rating": 6.2,
+      "id": "gTQxlK",
+      "story": "After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.",
+      "director":  "Cathy Yan" ,
+      "writers": " Christina Hodson, Paul Dini",
+      "trailer": "https://www.youtube.com/embed/kGM4uYZzfu0",
+      "actors": [
+        { "actors_name":"Margot Robbie", "character":"Harleen Quinzel / Harley Quinn" },
+        { "actors_name":"Ewan McGregor", "character":"Roman Sionis / Black Mask" },
+        { "actors_name":"Mary Elizabeth Winstead", "character":"Helena Bertinelli / Huntress" },
+        { "actors_name":"Jurnee Smollett-Bell", "character":"Dinah Lance / Black Canary" },
+        { "actors_name":"Rosie Perez", "character":"Rosie Perez" }],
+      "film_images": [
+        "birds_of_prey/1", "birds_of_prey/2", "birds_of_prey/3", "birds_of_prey/4", "birds_of_prey/5", 
+        "birds_of_prey/6", "birds_of_prey/7", "birds_of_prey/8", "birds_of_prey/9"
+      ]
+    },
+    {
+      "image": "Chernobyl.jpg",
+      "name": "Chernobyl",
+      "category": "Action, Drama, Sci-Fi",
+      "release": "20 February 2020",
+      "rating": 5.7,
+      "id": "b0WI40",
+      "story": "Ray Garrison, a slain soldier, is re-animated with superpowers.",
+      "director":  " Dave Wilson" ,
+      "writers": " Jeff Wadlow (screenplay by), Eric Heisserer (screenplay by)",
+      "trailer": "https://www.youtube.com/embed/vOUVVDWdXbo",
+      "actors": [
+        { "actors_name":"Vin Diesel", "character":"Ray Garrison / Bloodshot" },
+        { "actors_name":"Eiza González", "character":"KT" },
+        { "actors_name":"Sam Heughan", "character":"Jimmy Dalton" },
+        { "actors_name":"Toby Kebbell", "character":"Martin Axe" },
+        { "actors_name":"Talulah Riley", "character":"Gina Garrison" }],
+      "film_images": [
+        "bloodshot/1","bloodshot/2","bloodshot/3","bloodshot/4","bloodshot/5","bloodshot/6","bloodshot/7","bloodshot/8","bloodshot/9"
+      ]
+    },
+    {
+      "image": "Friends.jpg",
+      "name": "Friends",
+      "category": "Action",
+      "release": "24 April 2020",
+      "rating": 6.9,
+      "id": "8reCw1",
+      "story": "Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's enlisted to rescue the kidnapped son of an imprisoned international crime lord.",
+      "director":  "Sam Hargrave" ,
+      "writers": " Joe Russo (screenplay by), Ande Parks",
+      "trailer": "https://www.youtube.com/embed/L6P3nI6VnlY",
+      "actors": [
+        { "actors_name":"Chris Hemsworth", "character":"Tyler Rake" },
+        { "actors_name":"Rudhraksh Jaiswal", "character":"Ovi Mahajan" },
+        { "actors_name":"Randeep Hooda", "character":"Saju" },
+        { "actors_name":"Golshifteh Farahani", "character":"Nik Khan" },
+        { "actors_name":"Pankaj Tripathi", "character":"Ovi Mahajan Sr." }],
+      "film_images": [
+        "extraction/1","extraction/2","extraction/3","extraction/4","extraction/5","extraction/6","extraction/7","extraction/8","extraction/9"
+      ]
+    },
+    {
+      "image": "Game of Thrones.jpg",
+      "name": "Game of Thrones",
+      "category": "Action",
+      "release": "24 April 2020",
+      "rating": 6.1,
+      "id": "9PkF06",
+      "story": "A hardened CIA operative finds himself at the mercy of a precocious 9-year-old girl, having been sent undercover to surveil her family.",
+      "director":  "Peter Segal" ,
+      "writers": " Erich Hoeber, Jon Hoeber",
+      "trailer": "https://www.youtube.com/embed/pfAhQSz-j_o",
+      "actors": [
+        { "actors_name":"Dave Bautista", "character":"JJ" },
+        { "actors_name":"Chloe Coleman", "character":"Sophie" },
+        { "actors_name":"Kristen Schaal", "character":"Bobbi" },
+        { "actors_name":"Parisa Fitz-Henley", "character":"Nik Khan" },
+        { "actors_name":"Ken Jeong", "character":"Kim" }],
+      "film_images": [
+        "my_spy/1","my_spy/2","my_spy/3","my_spy/4","my_spy/5","my_spy/6","my_spy/7","my_spy/8","my_spy/9"
+      ]
+    },
+    {
+      "image": "Money Heist.jpg",
+      "name": "Money Heist",
+      "category": "Action, Adventure, Comedy",
+      "release": "25 January 2020",
+      "rating": 6.6,
+      "id": "BFep93",
+      "story": "After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.",
+      "director":  "Jeff Fowler" ,
+      "writers": " Patrick Casey (as Pat Casey), Josh Miller",
+      "trailer": "https://www.youtube.com/embed/szby7ZHLnkA",
+      "actors": [
+        { "actors_name":"Ben Schwartz", "character":"Sonic the Hedgehog (voice)" },
+        { "actors_name":"James Marsden", "character":"Thomas Michael|Tom Wachowski" },
+        { "actors_name":"Jim Carrey", "character":"Dr. Ivo Eggman Robotnik" },
+        { "actors_name":"Tika Sumpter", "character":"Maddie Wachowski" },
+        { "actors_name":"Natasha Rothwell", "character":"Rachel" }],
+      "film_images": [
+        "sonic_the_hedgehog/1","sonic_the_hedgehog/2","sonic_the_hedgehog/3","sonic_the_hedgehog/4","sonic_the_hedgehog/5","sonic_the_hedgehog/6",
+        "sonic_the_hedgehog/7","sonic_the_hedgehog/8","sonic_the_hedgehog/9"
+      ]
+    },
+    {
+      "image": "Rick and Morty.jpg",
+      "name": "Rick and Morty",
+      "category": "Action, Comedy, Crime",
+      "release": "3 December 2019",
+      "rating": 7.9,
+      "id": "tQJHb1",
+      "story": "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+      "director":  "Guy Ritchie" ,
+      "writers": "Matthew McConaughey, Charlie Hunnam, Michelle Dockery",
+      "trailer": "https://www.youtube.com/embed/2B0RpUGss2c",
+      "actors": [
+        { "actors_name":"Matthew McConaughey", "character":"Mickey Pearson" },
+        { "actors_name":"Charlie Hunnam", "character":"Raymond" },
+        { "actors_name":"Henry Golding", "character":"Dry Eye" },
+        { "actors_name":"Michelle Dockery", "character":"Rosalind" },
+        { "actors_name":"Jeremy Strong", "character":"Cannabis Kingpin Matthew" }],
+      "film_images": [
+        "the_gentlemen/1","the_gentlemen/2","the_gentlemen/3","the_gentlemen/4","the_gentlemen/5","the_gentlemen/6","the_gentlemen/7","the_gentlemen/8","the_gentlemen/9"
+      ]
+    },
+    {
+      "image": "Supernatural.jpg",
+      "name": "Supernatural",
+      "category": "Adventure, Comedy, Family",
+      "release": "1 January 2020",
+      "rating": 5.6,
+      "id": "VR5lUH",
+      "story": "A physician who can talk to animals embarks on an adventure to find a legendary island with a young apprentice and a crew of strange pets",
+      "director":  "Stephen Gaghan" ,
+      "writers": "Stephen Gaghan, Dan Gregor",
+      "trailer": "https://www.youtube.com/embed/hej47fWFLQs",
+      "actors": [
+        { "actors_name":"Robert Downey Jr.", "character":"Dr. John Dolittle" },
+        { "actors_name":"Antonio Banderas", "character":"King Rassouli" },
+        { "actors_name":"Michael Sheen", "character":"Dr. Blair Müdfly" },
+        { "actors_name":"Jim Broadbent", "character":"Lord Thomas Badgley" },
+        { "actors_name":"Jessie Buckley", "character":"Queen Victoria" }],
+      "film_images": [
+        "dolittle/1","dolittle/2","dolittle/3","dolittle/4","dolittle/5","dolittle/6","dolittle/7","dolittle/8","dolittle/9"
+      ]
+    },
+    {
+      "image": "The Flash.jpg",
+      "name": "The Flash",
+      "category": "Action, Adventure, Fantasy",
+      "release": "16 December 2019",
+      "rating": 6.1,
+      "id": "oqtaCV",
+      "story": "The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.",
+      "director":  " J.J. Abrams" ,
+      "writers": "Chris Terrio (screenplay by), J.J. Abrams (screenplay by)",
+      "trailer": "https://www.youtube.com/embed/8Qn_spdM5Zg",
+      "actors": [
+        { "actors_name":"Carrie Fisher", "character":"General Leia Organa" },
+        { "actors_name":"Mark Hamill", "character":"Luke Skywalker" },
+        { "actors_name":"Daisy Ridley", "character":"Rey" },
+        { "actors_name":"Adam Driver", "character":"Kylo Ren / Ben Solo" },
+        { "actors_name":"John Boyega", "character":"Finn" }],
+      "film_images": [
+        "star_wars/1","star_wars/2","star_wars/3","star_wars/4","star_wars/5","star_wars/6","star_wars/7","star_wars/8","star_wars/9"
+      ]
+    },
+    {
+      "image": "The Simpsons.jpg",
+      "name": "The Simpsons",
+      "category": "Animation, Adventure, Comedy",
+      "release": "21 February 2020",
+      "rating": 7.5,
+      "id": "rLNneW",
+      "story": "Two elven brothers embark on a quest to bring their father back for one day.",
+      "director":  "Dan Scanlon" ,
+      "writers": " Dan Scanlon (original story by), Keith Bunin (original story by)",
+      "trailer": "https://www.youtube.com/embed/gn5QmllRCn4",
+      "actors": [
+        { "actors_name":"Tom Holland", "character":"Ian Lightfoot (voice)" },
+        { "actors_name":"Chris Pratt", "character":"Barley Lightfoot (voice)" },
+        { "actors_name":"Julia Louis-Dreyfus", "character":"Laurel Lightfoot (voice)" },
+        { "actors_name":"Octavia Spencer", "character":"The Manticore (voice)" },
+        { "actors_name":"Mel Rodriguez", "character":"Officer Colt Bronco (voice)" }],
+      "film_images": [
+        "onward/1","onward/2","onward/3","onward/4","onward/5","onward/6","onward/7","onward/8","onward/9"
       ]
     }
   ]

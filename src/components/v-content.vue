@@ -33,44 +33,32 @@
 </template>
 
 <script>
-// import { mapActions } from 'vuex'
-import { getVideoData } from '../video-mixin'
+import { mapActions } from 'vuex'
+// import { getVideoData } from '../video-mixin'
 export default {
   name: 'Content',
-  // props: {
-  //   film_data: {
-  //     type: Array,
-  //     default () {
-  //       return []
-  //     }
-  //   }
-  // },
-  // data () {
-  //   return {
-  //     films: []
-  //   }
-  // },
-  mixins: [getVideoData]
-  // computed: {
-  //   // ...mapGetters([
-  //   //   'FILMS'
-  //   // ])
-  // }
-  // methods: {
-  //   ...mapActions([
-  //     'GET_FILMS_FROM_API'
-  //   ])
-  // },
-  // created () {
-  //   this.GET_FILMS_FROM_API()
-  //     .then((responce) => {
-  //       if (responce.data) {
-  //         for (const item of responce.data) {
-  //           this.films.push(item)
-  //         }
-  //       }
-  //     })
-  // }
+  data () {
+    return {
+      films: []
+    }
+  },
+  // mixins: [getVideoData]
+  methods: {
+    ...mapActions([
+      'GET_FILMS_FROM_API'
+    ])
+  },
+  created () {
+    this.GET_FILMS_FROM_API()
+      .then((responce) => {
+        if (responce.data) {
+          console.log(responce.data)
+          for (const item of responce.data) {
+            this.films.push(item)
+          }
+        }
+      })
+  }
 }
 </script>
 

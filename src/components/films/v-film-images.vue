@@ -9,11 +9,10 @@
             :key="index"
           >
             <!-- <router-link> -->
-              <img @click="popUp" :src="require('../../assets/film-pictures/' + image.f_image)" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
+              <img @click="popUp" :src="require('../../assets/film-pictures/' + image + '.jpg')" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
             <!-- </router-link>   -->
           </div>
         </div>
-
         <div
           style="background-color: rgba(0, 0, 0, .5);"
           class="fixed top-0 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto"

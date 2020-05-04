@@ -4,7 +4,7 @@ export default {
   GET_FILMS_FROM_API ({ commit }) {
     return axios.get('http://localhost:3000/films')
       .then((response) => {
-        commit('SET_FILMS_TO_STATE', response.data)
+        commit('SET_DATA_TO_STATE', response.data)
         return response
       })
       .catch((error) => {
@@ -15,7 +15,7 @@ export default {
   GET_ACTORS_FROM_API ({ commit }) {
     return axios.get('http://localhost:3000/actors')
       .then((response) => {
-        commit('SET_FILMS_TO_STATE', response.data)
+        commit('SET_DATA_TO_STATE', response.data)
         return response
       })
       .catch((error) => {
@@ -26,7 +26,7 @@ export default {
   GET_TV_FROM_API ({ commit }) {
     return axios.get('http://localhost:3000/tv')
       .then((response) => {
-        commit('SET_FILMS_TO_STATE', response.data)
+        commit('SET_DATA_TO_STATE', response.data)
         return response
       })
       .catch((error) => {

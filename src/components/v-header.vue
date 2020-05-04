@@ -19,14 +19,17 @@
       </ul>
       <div class="flex flex-col md:flex-row items-center">
         <div class="relative">
+            <!-- <v-suggest  :data="menu" show-field="name" class="bg">
+              <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
+            </v-suggest> -->
           <input
             type="text"
             class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
             placeholder="Search"
           >
           <!-- <SearchDropDown/> -->
-          <div class="absolute top-0">
-            <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
+           <div class="absolute top-0">
+          <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
           </div>
         </div>
         <div class="ml-4">
@@ -39,8 +42,9 @@
 
 <script>
 // import SearchDropDown from './v-search-dropdown.vue'
+// import { Suggest } from 'v-suggest'
 export default {
-  // components: { SearchDropDown },
+  // components: { 'v-suggest': Suggest },
   name: 'Header',
   data () {
     return {

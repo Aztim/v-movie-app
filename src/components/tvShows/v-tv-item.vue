@@ -20,16 +20,16 @@
         </p>
 
         <div class="mt-12">
-          <h4 class="text-white font-semibold">Featured Cast</h4>
+          <h4 class="text-white font-semibold">Creator</h4>
           <div class="flex mt-4">
             <div>
               <div>{{ tv_shows.director }}</div>
-              <div class="text-sm text-gray-400">Screenplay, Director, Story</div>
+              <!-- <div class="text-sm text-gray-400">Screenplay, Director, Story</div> -->
             </div>
-            <div class="ml-8">
+            <!-- <div class="ml-8">
               <div>{{ tv_shows.writers }}</div>
               <div class="text-sm text-gray-400">Screenplay</div>
-            </div>
+            </div> -->
           </div>
         </div>
         <VideoWindow

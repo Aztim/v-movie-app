@@ -23,7 +23,7 @@
 <script>
 // import { getVideoData } from '../../video-mixin'
 // import Actor from './v-actors-item'
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'actors',
   // components: { Actor },
@@ -33,6 +33,14 @@ export default {
     }
   },
   // mixins: [getVideoData]
+  computed: {
+    ...mapGetters([
+      // 'PRODUCTS',
+      // 'CART',
+      // 'DESKTOP',
+      // 'SEARCH_VALUE'
+    ])
+  },
   methods: {
     ...mapActions([
       'GET_ACTORS_FROM_API'
@@ -46,6 +54,7 @@ export default {
             console.log(responce.data)
             this.actors.push(item)
           }
+          this.actors.sort()
         }
       })
   }

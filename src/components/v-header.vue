@@ -19,18 +19,7 @@
       </ul>
       <div class="flex flex-col md:flex-row items-center">
         <div class="relative">
-            <!-- <v-suggest  :data="menu" show-field="name" class="bg">
-              <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
-            </v-suggest> -->
-          <input
-            type="text"
-            class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
-            placeholder="Search"
-          >
-          <!-- <SearchDropDown/> -->
-           <div class="absolute top-0">
-          <i class="fas fa-search fill-current w-4 text-gray-500 mt-2 ml-2"></i>
-          </div>
+          <SearchDropDown/>
         </div>
         <div class="ml-4">
           <img src="../assets/pit.jpg" alt="avataer" class="rounded-full w-8 h-8">
@@ -41,10 +30,9 @@
 </template>
 
 <script>
-// import SearchDropDown from './v-search-dropdown.vue'
-// import { Suggest } from 'v-suggest'
+import SearchDropDown from './v-search-dropdown.vue'
 export default {
-  // components: { 'v-suggest': Suggest },
+  components: { SearchDropDown },
   name: 'Header',
   data () {
     return {
@@ -52,7 +40,9 @@ export default {
         { name: 'Movies', value: '1', route: '/' },
         { name: 'TV Shows', value: '2', route: '/tv' },
         { name: 'Actors', value: '3', route: '/actors' }
-      ]
+      ],
+      films: [],
+      name: ''
     }
   }
 }
@@ -60,4 +50,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* v-suggest input {
+  background-color:pink;
+  } */
 </style>

@@ -52,7 +52,7 @@ export default {
     this.GET_FILMS_FROM_API()
       .then((responce) => {
         if (responce.data) {
-          console.log(responce.data)
+          // console.log(responce.data)
           for (const item of responce.data) {
             this.films.push(item)
           }

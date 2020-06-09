@@ -56,13 +56,13 @@ export default {
   },
   data () {
     return {
-      visible: false,
-      image: ''
+      visible: false
+      // image: ''
     }
   },
   methods: {
     showVideoWindow (e) {
-      this.image = e.target.src
+      // this.image = e.target.src
       this.visible = true
     },
     closeVideoWindow () {

@@ -34,7 +34,7 @@
 
 <script>
 import { mapActions } from 'vuex'
-// import { getVideoData } from '../video-mixin'
+// import { getFilmsData } from '@/mixins/getFilmsData.js'
 export default {
   name: 'Content',
   data () {
@@ -42,17 +42,16 @@ export default {
       films: []
     }
   },
-  // mixins: [getVideoData]
   methods: {
     ...mapActions([
       'GET_FILMS_FROM_API'
     ])
   },
+  // mixins: [getFilmsData]
   created () {
     this.GET_FILMS_FROM_API()
       .then((responce) => {
         if (responce.data) {
-          // console.log(responce.data)
           for (const item of responce.data) {
             this.films.push(item)
           }

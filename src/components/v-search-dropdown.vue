@@ -4,8 +4,8 @@
       type="text"
       class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
       placeholder="Film"
-      v-model="search"
-      @keyup="searchInput"
+      v-model="desiredFilm"
+      @keyup="searchDesiredFilm"
     >
     <div class="absolute top-0">
       <svg
@@ -17,7 +17,7 @@
     <div class="absolute bg-gray-800 text-sm rounded w-64 mt-4">
       <ul class="suggestions">
         <li
-        v-for="(s, index) in suggestions"
+        v-for="(result, index) in searchingResult"
         :key="index"
         class="border-b border-gray-700"
         @click="chosenFilm"
@@ -25,67 +25,53 @@
           <router-link
             class="block hover:bg-gray-700 px-3 py-3"
             flex items-center
-            :to="{ name:'film', params:{ id:s.id }}"
+            :to="{ name:result.path, params:{ id:result.id }}"
           >
-            <!-- <img :src="require('../assets/films/' + s.image)" alt="poster"> -->
-            <span>{{ s.name }}</span>
+            <!-- <img :src="require('../assets/films/' + result.image)" alt="poster"> -->
+            <span>{{ result.name }}</span>
           </router-link>
         </li>
       </ul>
-      <div v-if="noResult" class="px-3 py-3">No results for {{ search }}</div>
+      <div v-show ="noResults" class="px-3 py-3">No results for {{ desiredFilm }}</div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { getVideoData } from '../mixins/getVideoData'
 
 export default {
   data () {
     return {
-      search: '',
-      films: [],
-      suggestions: [],
-      noResult: false
+      desiredFilm: '',
+      searchingResult: [],
+      noResults: false
     }
   },
+  mixins: [getVideoData],
   methods: {
-    ...mapActions([
-      'GET_FILMS_FROM_API'
-    ]),
-    searchInput () {
-      const input = this.search
+    searchDesiredFilm () {
+      const input = this.desiredFilm
       if (input) {
-        this.suggestions = this.films.filter(function (film) {
+        this.searchingResult = this.films.filter(function (film) {
           return film.name.toLowerCase().startsWith(input)
         })
       } else {
-        this.suggestions = ''
+        this.searchingResult = ''
       }
-      if (this.suggestions.length === 0) {
-        this.noResult = true
+      if (this.searchingResult.length === 0) {
+        this.noResults = true
       } if (input === '') {
-        this.noResult = false
-      } if (input && this.suggestions.length) {
-        this.noResult = false
+        this.noResults = false
+      } if (input && this.searchingResult.length) {
+        this.noResults = false
       }
     },
-    chosenFilm (e) {
-      this.search = ''
-      this.suggestions = ''
-      this.noResult = false
+    chosenFilm () {
+      this.desiredFilm = ''
+      this.searchingResult = ''
+      this.noResults = false
     }
-  },
-  created () {
-    this.GET_FILMS_FROM_API()
-      .then((responce) => {
-        if (responce.data) {
-          // console.log(responce.data)
-          for (const item of responce.data) {
-            this.films.push(item)
-          }
-        }
-      })
   }
 }
 </script>

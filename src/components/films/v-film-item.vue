@@ -12,7 +12,6 @@
           <span>{{ film.release }}</span>
           <span class="mx-2"> | </span>
           <span>{{ film.category }}</span>
-          <!-- <div v-for="(act, index) in film.actors" :key="index">{{ act.actors_name }}</div> -->
         </div>
 
         <p class="text-gray-300 mt-8">
@@ -69,20 +68,7 @@ export default {
       return this.$store.getters.GET_FILM.find(b => b.id === this.id)
     }
   }
-  // computed: {
-  //   ...mapGetters([
-  //     'GET_FILM'(this.id)
-  //   ])
-  // }
   // mixins: [video]
-  // props: {
-  //   film_data: {
-  //     type: Array,
-  //     default () {
-  //       return {}
-  //     }
-  //   }
-  // }
 }
 </script>
 

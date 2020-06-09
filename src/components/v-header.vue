@@ -40,9 +40,7 @@ export default {
         { name: 'Movies', value: '1', route: '/' },
         { name: 'TV Shows', value: '2', route: '/tv' },
         { name: 'Actors', value: '3', route: '/actors' }
-      ],
-      films: [],
-      name: ''
+      ]
     }
   }
 }
@@ -50,7 +48,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* v-suggest input {
-  background-color:pink;
-  } */
 </style>

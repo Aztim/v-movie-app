@@ -54,7 +54,6 @@ export default {
         if (responce.data) {
           for (const item of responce.data) {
             this.tv.push(item)
-            console.log(this.tv)
           }
         }
       })

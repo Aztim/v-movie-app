@@ -50,7 +50,7 @@ export default {
     film_trailer: {
       type: String,
       default () {
-        return []
+        return ''
       }
     }
   },

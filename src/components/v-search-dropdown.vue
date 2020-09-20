@@ -70,7 +70,7 @@ export default {
     },
     chosenFilm () {
       this.desiredFilm = ''
-      this.searchingResult = ''
+      this.searchingResult = []
       this.noResults = false
     }
   }

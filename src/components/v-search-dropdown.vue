@@ -54,7 +54,8 @@ export default {
       const input = this.desiredFilm
       if (input) {
         this.searchingResult = this.films.filter(function (film) {
-          return film.name.toLowerCase().startsWith(input)
+          // return film.name.toLowerCase().startsWith(input)
+          return film.name.startsWith(input.toUpperCase())
         })
       } else {
         this.searchingResult = ''

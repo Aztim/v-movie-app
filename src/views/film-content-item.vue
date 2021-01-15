@@ -2,7 +2,7 @@
 <div>
   <div class="movie-info border-b border-gray-800">
     <div class="container mx-auto px-4 py-16 flex ">
-      <img :src="require('../../assets/films/' + film.image)" alt="" class="w-96">
+      <img :src="require('@/assets/films/' + film.image)" alt="" class="w-96">
       <div  class="ml-24">
         <h2 class="text-4xl font-semibold">{{ film.name }}</h2>
         <div class="flex items-center text-gray-400 text-sm">
@@ -51,9 +51,9 @@
 <script>
 // import { video } from '../video-mixin'
 // import { mapGetters } from 'vuex'
-import VideoWindow from './v-film-video-window.vue'
-import Actors from './v-film-actors.vue'
-import FilmImages from './v-film-images.vue'
+import VideoWindow from '@/components/films/v-film-video-window'
+import Actors from '@/components/films/v-film-actors.vue'
+import FilmImages from '@/components/films/v-film-images.vue'
 export default {
   name: 'film-item',
   components: { VideoWindow, Actors, FilmImages },

@@ -54,7 +54,6 @@
 </div>
 </template>
 <script>
-// import { video } from '../video-mixin'
 import { mapState } from 'vuex'
 import VideoWindow from '@/components/films/filmVideoWindow'
 import Actors from '@/components/films/filmActors.vue'
@@ -67,12 +66,12 @@ export default {
   },
   computed: {
     ...mapState({
-      filmData: state => state.popularFilms.filmData,
-      filmCredit: state => state.popularFilms.filmCredit
+      filmData: state => state.popularFilmData.filmData
+      // filmCredit: state => state.popularFilms.filmCredit
     })
   },
   mounted () {
-    this.$store.dispatch('popularFilms/getFilm', { id: this.$route.params.id })
+    this.$store.dispatch('popularFilmData/getFilm', { id: this.$route.params.id })
   }
 }
 </script>

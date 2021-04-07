@@ -5,12 +5,12 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div
             class="mt-8"
-            v-for="(image, index) in film_images"
+            v-for="(image, index) in images"
             :key="index"
           >
-            <!-- <router-link> -->
-              <img @click="popUp" :src="require('../../assets/film-pictures/' + image + '.jpg')" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
-            <!-- </router-link>   -->
+            <div v-if="index < 9">
+              <img @click="popUp" :src="'https://image.tmdb.org/t/p/w500/' + image.file_path" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
+            </div>
           </div>
         </div>
         <div
@@ -37,7 +37,7 @@
 <script>
 export default {
   props: {
-    film_images: {
+    images: {
       type: Array,
       default () {
         return []

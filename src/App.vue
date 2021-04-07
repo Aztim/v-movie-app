@@ -1,14 +1,12 @@
 <template>
   <div id="app">
     <Header/>
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from '@/components/v-header.vue'
+import Header from '@/components/Header.vue'
 export default {
   name: 'App',
   components: {

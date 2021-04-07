@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import { getVideoData } from '../mixins/getVideoData'
-
+// import { getVideoData } from '../mixins/getVideoData'
+import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
@@ -48,7 +48,7 @@ export default {
       noResults: false
     }
   },
-  mixins: [getVideoData],
+  // mixins: [getVideoData],
   methods: {
     searchDesiredFilm () {
       const input = this.desiredFilm
@@ -73,6 +73,9 @@ export default {
       this.searchingResult = []
       this.noResults = false
     }
+  },
+  computed: {
+    ...mapGetters({ films: 'getFilmsData' })
   }
 }
 </script>

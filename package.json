@@ -15,7 +15,8 @@
     "v-suggest": "^2.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
-    "vuex": "^3.1.3"
+    "vuex": "^3.1.3",
+    "youtube-video-js": "^3.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",

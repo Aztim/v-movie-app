@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import FilmContent from '../views/FilmContent.vue'
-import Film from '../views/film-content-item.vue'
+import FilmsFeed from '../views/FilmsFeed.vue'
+import FilmData from '../views/FilmData.vue'
 import Actors from '../components/actors/v-actors-wrapper'
 import TVwrapper from '../components/tvShows/v-tv-wrapper'
 import TVShow from '../components/tvShows/v-tv-item'
@@ -11,14 +11,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'film_content',
-    component: FilmContent
+    name: 'filmsFeed',
+    component: FilmsFeed
   },
   {
-    path: '/film/:id',
-    props: true,
-    name: 'film',
-    component: Film
+    path: '/films/:id',
+    // props: true,
+    name: 'filmData',
+    component: FilmData
   },
   {
     path: '/actors',

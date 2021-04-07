@@ -28,14 +28,20 @@
           </div>
           <div class="modal-body px-8 py-8">
             <div class="responsive-container overflow-hidden relative" style="padding-top: 56.25%">
-              <iframe
+              <youtube-video
+                class="absolute top-0"
+                width="1000"
+                height="500"
+                :src="`https://www.youtube.com/embed?v=${trailer}`"
+              />
+              <!-- <iframe
                 class="responsive-iframe absolute top-0 left-0 w-full h-full"
-                :src="film_trailer"
+                :src="`https://www.youtube.com/embed?v=${trailer}`"
                 style="border:0;"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
               >
-              </iframe>
+              </iframe> -->
             </div>
           </div>
         </div>
@@ -45,13 +51,15 @@
 </template>
 
 <script>
+import 'youtube-video-js'
+
 export default {
+  name: 'videoWindow',
+  components: { },
   props: {
-    film_trailer: {
+    trailer: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     }
   },
   data () {

@@ -2,7 +2,7 @@
 <div>
   <div class="movie-info border-b border-gray-800">
     <div class="container mx-auto px-4 py-16 flex ">
-      <img :src="require('../../assets/tv_show/' + tv_shows.image)" alt="" class="w-96">
+      <!-- <img :src="require('../../assets/tv_show/' + tv_shows.image)" alt="" class="w-96"> -->
       <div  class="ml-24">
         <h2 class="text-4xl font-semibold">{{ tv_shows.name }}</h2>
         <div class="flex items-center text-gray-400 text-sm">
@@ -43,9 +43,9 @@
       :tv_shows_actors="tv_shows.actors"
     />
   <!-- --end actors-info-- ------------->
-    <TVShowImages
+    <!-- <TVShowImages
       :tv_shows_images="tv_shows.tv_shows_images"
-    />
+    /> -->
 </div>
 </template>
 
@@ -53,10 +53,10 @@
 // import { mapGetters } from 'vuex'
 import VideoWindow from './v-tv-video-window.vue'
 import Actors from './v-tv-actors.vue'
-import TVShowImages from './v-tv-images.vue'
+// import TVShowImages from './v-tv-images.vue'
 export default {
   name: 'tv-item',
-  components: { VideoWindow, Actors, TVShowImages },
+  components: { VideoWindow, Actors },
   props: {
     id: {
       type: String,

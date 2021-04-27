@@ -33,7 +33,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import ErrorMessage from '@/components/ErrorMessage'
+import ErrorMessage from '@/components/errorMessage'
 
 export default {
   name: 'films_feed',

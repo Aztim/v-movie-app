@@ -9,13 +9,13 @@
           v-for="(item, index) in tv"
           :key="index"
         >
-          <router-link :to="{ name:'tvshow', params:{ id:item.id }}">
+          <!-- <router-link :to="{ name:'tvshow', params:{ id:item.id }}">
             <img :src="require('../../assets/tv_show/' + item.image )" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
-          </router-link>
+          </router-link> -->
           <div class="mt-2">
-            <router-link :to="{ name:'tvshow', params:{ id:item.id }}" class="text-lg mt-2 hover:text-gray:300">
+            <!-- <router-link :to="{ name:'tvshow', params:{ id:item.id }}" class="text-lg mt-2 hover:text-gray:300">
               {{ item.name }}
-            </router-link>
+            </router-link> -->
             <div class="flex items-center text-gray-400 text-sm mt-1">
               <i class="fas fa-star"></i>
               <span class="ml-1">{{ item.rating }}</span>

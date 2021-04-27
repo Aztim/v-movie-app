@@ -10,7 +10,6 @@ const getFilmsGenre = () => {
 }
 
 const getFilmData = id => {
-  console.log(id)
   return axios.get(`movie/${id}?api_key=${apiKey}&append_to_response=videos,images,credits`)
   // return axios.get(`/articles/${slug}`).then(response => response.data.article)
 }
@@ -22,10 +21,14 @@ const getFilmData = id => {
 const getFilmCredit = id => {
   return axios.get(`movie/${id}/credits?api_key=${apiKey}&language=en-US`).then(response => response.data)
 }
+const getsearchResults = search => {
+  return axios.get(`/search/movie?query=${search}&api_key=${apiKey}&language=en-US=`).then(response => response.data)
+}
 
 export default {
   getFilms,
   getFilmsGenre,
   getFilmData,
-  getFilmCredit
+  getFilmCredit,
+  getsearchResults
 }

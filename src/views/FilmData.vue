@@ -1,7 +1,7 @@
 <template>
-<div v-if="filmData">
-  <div class="movie-info border-b border-gray-800">
-    <div class="container mx-auto px-4 py-16 flex ">
+  <div v-if="filmData">
+    <ErrorMessage v-if="error"/>
+    <div class="container mx-auto px-4 py-16 flex movie-info border-b border-gray-800">
       <img :src="'https://image.tmdb.org/t/p/w500/' + filmData.poster_path" alt="" class="w-96">
       <div  class="ml-24">
         <h2 class="text-4xl font-semibold">{{ filmData.original_title }}</h2>
@@ -42,32 +42,32 @@
         />
       </div>
     </div>
+    <!-- --end movie-info-- ------------->
+      <Actors
+        :actors="filmData.credits.cast"
+      />
+    <!-- --end actors-info-- ------------->
+      <FilmImages
+        :images="filmData.images.backdrops"
+      />
   </div>
-  <!-- --end movie-info-- ------------->
-    <Actors
-      :actors="filmData.credits.cast"
-    />
-  <!-- --end actors-info-- ------------->
-    <FilmImages
-      :images="filmData.images.backdrops"
-    />
-</div>
 </template>
 <script>
+import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
 import VideoWindow from '@/components/films/filmVideoWindow'
 import Actors from '@/components/films/filmActors.vue'
 import FilmImages from '@/components/films/filmImages.vue'
 export default {
   name: 'film-data',
-  components: { VideoWindow, Actors, FilmImages },
+  components: { VideoWindow, Actors, FilmImages, ErrorMessage },
   data () {
     return {}
   },
   computed: {
     ...mapState({
-      filmData: state => state.popularFilmData.filmData
-      // filmCredit: state => state.popularFilms.filmCredit
+      filmData: state => state.popularFilmData.filmData,
+      error: state => state.popularFilms.error
     })
   },
   mounted () {

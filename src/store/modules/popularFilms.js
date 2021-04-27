@@ -4,7 +4,8 @@ export default {
   namespaced: true,
   state: {
     data: null,
-    error: null
+    error: null,
+    search: null
   },
 
   mutations: {
@@ -13,6 +14,9 @@ export default {
     },
     getPopularFilmsError (state, payload) {
       state.error = payload
+    },
+    getSearchSuccess (state, payload) {
+      state.search = payload
     }
     // getFilmDataSuccess (state, payload) {
     //   state.filmData = payload

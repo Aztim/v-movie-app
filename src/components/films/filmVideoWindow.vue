@@ -2,11 +2,18 @@
   <div>
     <div class="mt-12">
       <button
-        class="flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-4 hover:bg-orange-600 transition ease-in-out duration-150"
+        class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 hover:bg-orange-600 transition ease-in-out duration-150"
         @click="showVideoWindow"
       >
         <i class="far fa-play-circle"></i>
           <span class="ml-2">Play Trailer</span>
+      </button>
+      <button
+        class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 ml-5 hover:bg-orange-600 transition ease-in-out duration-150"
+        @click="showVideoWindow"
+      >
+        <i class="far fa-heart"></i>
+          <span class="ml-2">Favourite</span>
       </button>
     </div>
 
@@ -70,7 +77,6 @@ export default {
   },
   methods: {
     showVideoWindow () {
-      // this.image = e.target.src
       this.visible = true
     },
     closeVideoWindow () {

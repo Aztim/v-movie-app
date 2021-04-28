@@ -21,8 +21,13 @@ const getFilmData = id => {
 const getFilmCredit = id => {
   return axios.get(`movie/${id}/credits?api_key=${apiKey}&language=en-US`).then(response => response.data)
 }
+
 const getsearchResults = search => {
   return axios.get(`/search/movie?query=${search}&api_key=${apiKey}&language=en-US=`).then(response => response.data)
+}
+
+const getUpcomingMovies = search => {
+  return axios.get(`/movie/upcoming?api_key=${apiKey}&language=en-US=`).then(response => response.data)
 }
 
 export default {
@@ -30,5 +35,6 @@ export default {
   getFilmsGenre,
   getFilmData,
   getFilmCredit,
-  getsearchResults
+  getsearchResults,
+  getUpcomingMovies
 }

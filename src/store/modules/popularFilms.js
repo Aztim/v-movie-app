@@ -33,6 +33,7 @@ export default {
         const popularFilms = await popularFilmsApi.getFilms()
         context.commit('getPopularFilms', popularFilms.data.results)
       } catch (err) {
+        console.log(err)
         context.commit('getPopularFilmsError', err)
       }
     }

@@ -38,8 +38,8 @@ export default {
     return {
       menu: [
         { name: 'Movies', value: '1', route: '/' },
-        { name: 'MyProfile', value: '2', route: '/profile' },
-        { name: 'Actors', value: '3', route: '/actors' }
+        { name: 'Actors', value: '2', route: '/actors' },
+        { name: 'Upcoming', value: '3', route: '/upcoming' }
       ]
     }
   }

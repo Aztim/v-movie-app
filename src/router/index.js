@@ -4,8 +4,7 @@ import FilmsFeed from '../views/FilmsFeed.vue'
 import FilmData from '../views/FilmData.vue'
 import ActorsFeed from '../views/ActorsFeed.vue'
 import ActorData from '../views/ActorData.vue'
-// import TVwrapper from '../components/tvShows/v-tv-wrapper'
-// import TVShow from '../components/tvShows/v-tv-item'
+import UpcomingMovies from '../views/UpcomingMovies.vue'
 
 Vue.use(VueRouter)
 
@@ -30,18 +29,12 @@ const routes = [
     path: '/actors/:id',
     name: 'actorData',
     component: ActorData
+  },
+  {
+    path: '/upcoming',
+    name: 'upcomingMovies',
+    component: UpcomingMovies
   }
-  // {
-  //   path: '/tv',
-  //   name: 'tv',
-  //   component: TVwrapper
-  // },
-  // {
-  //   path: '/tv/:id',
-  //   props: true,
-  //   name: 'tvshow',
-  //   component: TVShow
-  // }
 ]
 
 const router = new VueRouter({

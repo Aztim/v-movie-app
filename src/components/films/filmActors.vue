@@ -10,15 +10,23 @@
         v-for="(actor, index) in actors"
       >
         <div v-if="index < 8">
-          <img
-            :src="castProfileImage(actor)"
-            alt=""
-            class="hover:opacity-75 tansition easy-in-out duration-150"
-          />
+          <router-link
+            :to="{ name:'actorData', params:{ id: actor.id }}"
+            class="hover:text-white"
+          >
+            <img
+              :src="castProfileImage(actor)"
+              alt=""
+              class="hover:opacity-75 tansition easy-in-out duration-150"
+            />
+          </router-link>
           <div class="mt-2">
-            <!-- <router-link  class="text-lg mt-2 hover:text-gray:300"> -->
-            {{ actor.name }}
-            <!-- </router-link> -->
+            <router-link
+              :to="{ name:'actorData', params:{ id: actor.id }}"
+              class="text-gray-400  hover:text-white"
+            >
+              {{ actor.name }}
+            </router-link>
             <div class="text-sm text-gray-400">
               {{ actor.character }}
             </div>

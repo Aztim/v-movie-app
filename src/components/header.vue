@@ -19,7 +19,9 @@
       </ul>
       <div class="flex flex-col md:flex-row items-center">
         <div class="relative">
-          <SearchDropDown/>
+          <SearchDropDown
+            v-if="this.$route.path !== '/upcoming'"
+          />
         </div>
         <div class="ml-4">
           <img src="../assets/pit.jpg" alt="avataer" class="rounded-full w-8 h-8">

@@ -17,11 +17,10 @@ export default {
   },
 
   actions: {
-    async getActors (context) {
+    async getActors (context, page) {
       try {
-        const popularActors = await actors.getActors()
+        const popularActors = await actors.getActors(page)
         context.commit('getPopularActors', popularActors.data.results)
-        // console.log(popularActors.data.results)
       } catch (err) {
         context.commit('getPopularActorsError', err)
       }

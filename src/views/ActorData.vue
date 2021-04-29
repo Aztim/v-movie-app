@@ -1,11 +1,12 @@
 <template>
   <div>
+    <ErrorMessage v-if="error"/>
     <div v-if="actorData" class="container mx-auto px-4 py-16 flex">
       <div class="flex-none">
         <img :src="'https://image.tmdb.org/t/p/w300/' + actorData.profile_path" alt=""/>
         <ul class="flex items-center mt-4">
           <li>
-            <a href="#" title="Facebook">
+            <a :href="'https://facebook.com/' + socialDetails.facebook_id" title="Facebook">
               <svg
                 class="fill-current text-gray-400 hover:text-white w-6"
                 viewBox="0 0 448 512"
@@ -18,7 +19,7 @@
           </li>
 
           <li class="ml-6">
-            <a href="#" title="Instagram">
+            <a :href="'https://instagram.com/' + socialDetails.instagram_id" title="Instagram">
               <svg
                 class="fill-current text-gray-400 hover:text-white w-6"
                 viewBox="0 0 448 512"
@@ -31,7 +32,7 @@
           </li>
 
           <li class="ml-6">
-            <a href="#" title="Twitter">
+            <a :href="'https://twitter.com/' + socialDetails.twitter_id" title="Twitter">
               <svg
                 class="fill-current text-gray-400 hover:text-white w-6"
                 viewBox="0 0 512 512"
@@ -82,23 +83,11 @@
         </p>
 
         <h4 class="mt-12 font-semibold">Known For</h4>
-
-       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-         <div class="mt-4">
-
-         </div>
-        </div>
-
-        <div class="credits border-b border-gray-800">
-          <div class="container mx-auto px-4 py-16">
-            <h2 class="text-4xl font-semibold">Credits</h2>
-            <ul class="list-disc leading-loose pl-5 mt-8"><li></li></ul>
-          </div>
-        </div>
-        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div :key="movie.id" v-for="movie in this.knownFor">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div :key="index" v-for="(movie, index) in credits">
+            <div v-if="index < 5">
             <router-link
-              :to="`/movie/${movie.id}`"
+              :to="`/film/${movie.id}`"
               class="text-gray-400 text-sm leading-normal hover:text-white"
             >
               <img
@@ -109,18 +98,18 @@
 
               {{ movie.name }}
             </router-link>
-          </div> -->
+            </div>
+          </div>
         </div>
       </div>
-      <ErrorMessage v-if="error"/>
+    </div>
   </div>
 </template>
+
 <script>
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
-// import VideoWindow from '@/components/films/filmVideoWindow'
-// import Actors from '@/components/films/filmActors.vue'
-// import FilmImages from '@/components/films/filmImages.vue'
+
 export default {
   name: 'film-data',
   components: { ErrorMessage },
@@ -130,12 +119,22 @@ export default {
   computed: {
     ...mapState({
       actorData: state => state.popularActorData.actorData,
-      error: state => state.popularActorData.error,
-      credits: state => state.popularActorData.credits
+      credits: state => state.popularActorData.credits,
+      socialDetails: state => state.popularActorData.socialDetails,
+      error: state => state.popularActorData.error
     })
   },
   mounted () {
     this.$store.dispatch('popularActorData/getActor', { id: this.$route.params.id })
+  },
+  methods: {
+    movieImage (movie) {
+      const posterPath = movie.poster_path
+      if (!posterPath) {
+        return 'https://via.placeholder.com/185x278'
+      }
+      return 'https://image.tmdb.org/t/p/w185/' + posterPath
+    }
   }
 }
 </script>

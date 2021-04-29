@@ -8,13 +8,13 @@
         <i class="far fa-play-circle"></i>
           <span class="ml-2">Play Trailer</span>
       </button>
-      <button
+      <!-- <button
         class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 ml-5 hover:bg-orange-600 transition ease-in-out duration-150"
         @click="showVideoWindow"
       >
         <i class="far fa-heart"></i>
           <span class="ml-2">Favourite</span>
-      </button>
+      </button> -->
     </div>
 
     <div
@@ -39,7 +39,7 @@
                 class="absolute top-0"
                 width="1000"
                 height="500"
-                :src="`https://www.youtube.com/embed?v=${trailer}`"
+                :src="`https://www.youtube.com/embed?v=${trailer.results[0].key}`"
               />
               <!-- <iframe
                 class="responsive-iframe absolute top-0 left-0 w-full h-full"
@@ -65,7 +65,7 @@ export default {
   components: { },
   props: {
     trailer: {
-      type: String,
+      type: Object,
       required: true
     }
   },

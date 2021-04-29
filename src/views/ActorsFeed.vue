@@ -1,8 +1,17 @@
 <template>
     <div class="container mx-auto px-4 py-16">
       <ErrorMessage v-if="error"/>
-      <!-- <h2 class="text-4xl font-semibold">Popular Actors</h2> -->
+
       <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Actors</h2>
+
+      <div class="text-center mt-5">
+        <a href="" v-on:click.prevent="previous()">
+          Previous
+        </a>
+        <a href="" v-on:click.prevent="next()" class="ml-5">
+          Next
+        </a>
+      </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div
             class="mt-8"
@@ -19,22 +28,20 @@
             </div>
           </div>
         </div>
-        <!-- <div class="flex justify-between mt-16">
-          <a href="#">Previous</a>
-          <a href="#">Next</a>
-        </div> -->
     </div>
 </template>
 
 <script>
 import ErrorMessage from '@/components/errorMessage'
-// import Actor from './v-actors-item'
 import { mapState } from 'vuex'
+
 export default {
   name: 'actors',
   components: { ErrorMessage },
   data () {
-    return { }
+    return {
+      currentPage: 1
+    }
   },
   computed: {
     ...mapState({
@@ -43,11 +50,30 @@ export default {
     })
   },
   mounted () {
-    this.$store.dispatch('popularActors/getActors')
+    // this.$store.dispatch('popularActors/getActors')
+    this.fetchActors(this.currentPage)
+  },
+  methods: {
+    fetchActors (page) {
+      this.$store.dispatch('popularActors/getActors', page)
+    },
+    next () {
+      this.currentPage += 1
+      this.fetchActors(this.currentPage)
+    },
+    previous () {
+      if (this.currentPage <= 1) {
+        return
+      }
+      this.currentPage -= 1
+      this.fetchActors(this.currentPage)
+    }
   }
 }
 </script>
 
 <style>
-
+  a:hover {
+    color: #ED8936;
+  }
 </style>

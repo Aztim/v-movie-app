@@ -1,6 +1,7 @@
 <template>
   <div v-if="filmData">
     <ErrorMessage v-if="error"/>
+
     <div class="container mx-auto px-4 py-16 flex movie-info border-b border-gray-800">
       <img :src="'https://image.tmdb.org/t/p/w500/' + filmData.poster_path" alt="" class="w-96">
       <div  class="ml-24">
@@ -16,6 +17,7 @@
             :key="index"
           >
             {{ genre.name }}
+            {{ filmData.video }}
           </span>
         </div>
 
@@ -38,18 +40,18 @@
           </div>
         </div>
         <VideoWindow
-          :trailer="filmData.videos.results[0].key"
+          :trailer="filmData.videos"
         />
       </div>
     </div>
-    <!-- --end movie-info-- ------------->
-      <Actors
-        :actors="filmData.credits.cast"
-      />
-    <!-- --end actors-info-- ------------->
-      <FilmImages
-        :images="filmData.images.backdrops"
-      />
+
+    <Actors
+      :actors="filmData.credits.cast"
+    />
+
+    <FilmImages
+      :images="filmData.images.backdrops"
+    />
   </div>
 </template>
 <script>

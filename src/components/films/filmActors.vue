@@ -11,7 +11,7 @@
       >
         <div v-if="index < 8">
           <img
-            :src="'https://image.tmdb.org/t/p/w300/' + actor.profile_path "
+            :src="castProfileImage(actor)"
             alt=""
             class="hover:opacity-75 tansition easy-in-out duration-150"
           />
@@ -35,6 +35,15 @@ export default {
     actors: {
       type: Array,
       required: true
+    }
+  },
+  methods: {
+    castProfileImage (actor) {
+      if (actor.profile_path) {
+        return 'https://image.tmdb.org/t/p/w300/' + actor.profile_path
+      } else {
+        return 'https://via.placeholder.com/300x450'
+      }
     }
   }
 }

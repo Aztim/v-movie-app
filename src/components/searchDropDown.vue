@@ -18,7 +18,7 @@
         <li :key="index" v-for="(result, index) in searchResult">
           <router-link
             v-if="index < 10"
-            :to="`/films/${result.id}`"
+            :to="{ name:'filmData', params:{ id:result.id }}"
             @click.native="showSearchResult = false"
             class="flex items-center border-b border-gray-500 p-1"
           >

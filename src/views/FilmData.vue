@@ -72,8 +72,23 @@ export default {
       error: state => state.popularFilms.error
     })
   },
+  watch: {
+    '$route.params.id': {
+      handler () {
+        this.fetchMovie(this.$route.params.id)
+        // console.log('test2')
+      }
+    }
+  },
+  methods: {
+    fetchMovie (movieId) {
+      console.log(movieId)
+      this.$store.dispatch('popularFilmData/getFilm', { id: movieId })
+    }
+  },
   mounted () {
     this.$store.dispatch('popularFilmData/getFilm', { id: this.$route.params.id })
+    this.fetchMovie(this.$route.params.id)
   }
 }
 </script>

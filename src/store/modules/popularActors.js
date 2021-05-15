@@ -20,6 +20,7 @@ export default {
     async getActors (context, page) {
       try {
         const popularActors = await actors.getActors(page)
+        console.log(popularActors.data.results)
         context.commit('getPopularActors', popularActors.data.results)
       } catch (err) {
         context.commit('getPopularActorsError', err)

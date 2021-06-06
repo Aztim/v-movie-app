@@ -87,7 +87,7 @@ export default {
     }
   },
   mounted () {
-    this.$store.dispatch('popularFilmData/getFilm', { id: this.$route.params.id })
+    // this.$store.dispatch('popularFilmData/getFilm', { id: this.$route.params.id })
     this.fetchMovie(this.$route.params.id)
   }
 }

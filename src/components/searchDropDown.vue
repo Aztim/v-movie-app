@@ -4,7 +4,7 @@
       type="text"
       class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
       placeholder="Film"
-      v-model="searchFilm"
+      v-model.trim="searchFilm"
     >
     <div class="absolute top-0">
       <svg
@@ -34,12 +34,15 @@
 
 <script>
 import { mapState } from 'vuex'
+import debounce from 'lodash/debounce'
+
 export default {
   data () {
     return {
       searchFilm: '',
       showSearchResult: false,
-      searchResult: []
+      searchResult: [],
+      debouncedGetAnswer: debounce(this.getMoviesFromAPI, 500)
     }
   },
   methods: {
@@ -64,6 +67,12 @@ export default {
       } else {
         return 'https://via.placeholder.com/50x75'
       }
+    },
+    getMoviesFromAPI () {
+      const data = this.searchFilm
+      if (data.length !== 0) {
+        this.$store.dispatch('searchFilms/getSearchFilms', data)
+      }
     }
   },
   computed: {
@@ -73,10 +82,7 @@ export default {
   },
   watch: {
     searchFilm () {
-      const data = this.searchFilm.trim()
-      if (data.length !== 0) {
-        this.$store.dispatch('searchFilms/getSearchFilms', data)
-      }
+      this.debouncedGetAnswer()
     },
     getResult () {
       this.searchResult = this.getResult

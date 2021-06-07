@@ -2,7 +2,7 @@
   <div v-if="filmData">
     <ErrorMessage v-if="error"/>
 
-    <div class="container mx-auto px-4 py-16 flex movie-info border-b border-gray-800">
+    <div class="container mx-auto px-4 py-16 flex movie-info">
       <img :src="'https://image.tmdb.org/t/p/w500/' + filmData.poster_path" alt="" class="w-96">
       <div  class="ml-24">
         <h2 class="text-4xl font-semibold">{{ filmData.original_title }}</h2>
@@ -17,7 +17,7 @@
             :key="index"
           >
             {{ genre.name }}
-            {{ filmData.video }}
+            <span v-if="filmData.genres.length - 1 != index">,</span>
           </span>
         </div>
 
@@ -42,6 +42,7 @@
         <VideoWindow
           :trailer="filmData.videos"
         />
+
       </div>
     </div>
 

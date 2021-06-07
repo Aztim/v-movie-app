@@ -23,9 +23,11 @@
             v-if="this.$route.path !== '/upcoming'"
           />
         </div>
-        <div class="ml-4">
-          <img src="../assets/pit.jpg" alt="avataer" class="rounded-full w-8 h-8">
-        </div>
+        <router-link :to="{name:'Profile'}">
+          <div class="ml-4">
+            <img src="../assets/pit.jpg" alt="avataer" class="rounded-full w-8 h-8">
+          </div>
+        </router-link>
       </div>
     </div>
   </nav>
@@ -41,7 +43,8 @@ export default {
       menu: [
         { name: 'Movies', value: '1', route: '/' },
         { name: 'Actors', value: '2', route: '/actors' },
-        { name: 'Upcoming', value: '3', route: '/upcoming' }
+        { name: 'Upcoming', value: '3', route: '/upcoming' },
+        { name: 'Favorite', value: '4', route: '/favorite' }
       ]
     }
   }

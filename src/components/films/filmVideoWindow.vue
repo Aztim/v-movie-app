@@ -8,13 +8,13 @@
         <i class="far fa-play-circle"></i>
           <span class="ml-2">Play Trailer</span>
       </button>
-      <!-- <button
+      <button
         class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 ml-5 hover:bg-orange-600 transition ease-in-out duration-150"
         @click="showVideoWindow"
       >
         <i class="far fa-heart"></i>
-          <span class="ml-2">Favourite</span>
-      </button> -->
+          <span class="ml-2">Favorite</span>
+      </button>
     </div>
 
     <div

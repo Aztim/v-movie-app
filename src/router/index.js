@@ -5,6 +5,8 @@ import FilmData from '../views/FilmData.vue'
 import ActorsFeed from '../views/ActorsFeed.vue'
 import ActorData from '../views/ActorData.vue'
 import UpcomingMovies from '../views/UpcomingMovies.vue'
+import FavoriteList from '../views/FavoriteList.vue'
+import Profile from '../views/Profile.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,16 @@ const routes = [
     path: '/upcoming',
     name: 'upcomingMovies',
     component: UpcomingMovies
+  },
+  {
+    path: '/favorite',
+    name: 'FavoriteList',
+    component: FavoriteList
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
   }
 ]
 

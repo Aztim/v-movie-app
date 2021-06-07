@@ -1,5 +1,5 @@
 <template>
- <div id="example" class="container mx-auto px-4 pt-16">
+ <div id="example" class="container mx-auto px-4 pt-16 mb-56">
     <ErrorMessage v-if="error"/>
     <h2 class="uppercase
       tracking-wider

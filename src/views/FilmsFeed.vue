@@ -1,8 +1,10 @@
 <template>
  <div class="container mx-auto px-4 pt-16">
    <ErrorMessage v-if="error"/>
+   <Loader v-if="loader" />
+
     <div class="popular-movies">
-      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies</h2>
+      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies{{ loader }}</h2>
       <div v-if="films" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <div
           class="mt-8"
@@ -33,11 +35,12 @@
 <script>
 import { mapState } from 'vuex'
 import ErrorMessage from '@/components/errorMessage'
+import Loader from '@/components/loader'
 
 export default {
   name: 'films_feed',
   components: {
-    ErrorMessage
+    ErrorMessage, Loader
   },
   data () {
     return {}
@@ -45,7 +48,8 @@ export default {
   computed: {
     ...mapState({
       films: state => state.popularFilms.data,
-      error: state => state.popularFilms.error
+      error: state => state.popularFilms.error,
+      loader: state => state.loader.isShowLoader
     })
   },
   mounted () {

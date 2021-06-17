@@ -21,14 +21,17 @@ export default {
   },
 
   actions: {
-    async getFilm (context, { id }) {
-      context.commit('getFilmDataStart')
+    async getFilm ({ commit, dispatch }, { id }) {
+      commit('getFilmDataStart')
       try {
+        dispatch('toggleLoader', true, { root: true })
         const filmData = await popularFilmsApi.getFilmData(id)
         // const payload = { key1: filmData.data, key2: filmCredits.cast }
-        context.commit('getFilmDataSuccess', filmData.data)
+        commit('getFilmDataSuccess', filmData.data)
       } catch (err) {
-        context.commit('getFilmDataFailure', err)
+        commit('getFilmDataFailure', err)
+      } finally {
+        dispatch('toggleLoader', false, { root: true })
       }
     }
   }

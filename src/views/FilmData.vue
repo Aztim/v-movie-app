@@ -1,6 +1,7 @@
 <template>
   <div v-if="filmData">
     <ErrorMessage v-if="error"/>
+    <Loader v-if="loader" />
 
     <div class="container mx-auto px-4 py-16 flex movie-info">
       <img :src="'https://image.tmdb.org/t/p/w500/' + filmData.poster_path" alt="" class="w-96">
@@ -61,16 +62,19 @@ import { mapState } from 'vuex'
 import VideoWindow from '@/components/films/filmVideoWindow'
 import Actors from '@/components/films/filmActors.vue'
 import FilmImages from '@/components/films/filmImages.vue'
+import Loader from '@/components/loader'
+
 export default {
   name: 'film-data',
-  components: { VideoWindow, Actors, FilmImages, ErrorMessage },
+  components: { VideoWindow, Actors, FilmImages, ErrorMessage, Loader },
   data () {
     return {}
   },
   computed: {
     ...mapState({
       filmData: state => state.popularFilmData.filmData,
-      error: state => state.popularFilms.error
+      error: state => state.popularFilms.error,
+      loader: state => state.loader.isShowLoader
     })
   },
   watch: {

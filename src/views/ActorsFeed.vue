@@ -1,6 +1,7 @@
 <template>
     <div class="container mx-auto px-4 py-16">
       <ErrorMessage v-if="error"/>
+      <Loader v-if="loader" />
 
       <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Actors</h2>
 
@@ -34,10 +35,11 @@
 <script>
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
+import Loader from '@/components/loader'
 
 export default {
   name: 'actors',
-  components: { ErrorMessage },
+  components: { ErrorMessage, Loader },
   data () {
     return {
       currentPage: 1
@@ -46,7 +48,8 @@ export default {
   computed: {
     ...mapState({
       actors: state => state.popularActors.data,
-      error: state => state.popularActors.error
+      error: state => state.popularActors.error,
+      loader: state => state.loader.isShowLoader
     })
   },
   mounted () {

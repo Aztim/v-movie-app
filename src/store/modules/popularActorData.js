@@ -32,19 +32,22 @@ export default {
   },
 
   actions: {
-    async getActor (context, { id }) {
-      context.commit('getActorDataStart')
+    async getActor ({ commit, dispatch }, { id }) {
+      commit('getActorDataStart')
       // context.commit('getCreditsDataStart')
       try {
+        dispatch('toggleLoader', true, { root: true })
         const actorData = await popularActorsApi.getActorData(id)
         const credits = await popularActorsApi.getCombinedCredits(id)
         const socialDetails = await popularActorsApi.getSocialDetails(id)
 
-        context.commit('getActorDataSuccess', actorData.data)
-        context.commit('getCombinedCreditsSuccess', credits.data.cast.slice(0, 5))
-        context.commit('getSocialDetailsSuccess', socialDetails.data)
+        commit('getActorDataSuccess', actorData.data)
+        commit('getCombinedCreditsSuccess', credits.data.cast.slice(0, 5))
+        commit('getSocialDetailsSuccess', socialDetails.data)
       } catch (err) {
-        context.commit('getActorDataFailure', err)
+        commit('getActorDataFailure', err)
+      } finally {
+        dispatch('toggleLoader', false, { root: true })
       }
     }
   }

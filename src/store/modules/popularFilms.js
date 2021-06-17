@@ -28,13 +28,15 @@ export default {
   },
 
   actions: {
-    async getPopularFilms (context) {
+    async getPopularFilms ({ commit, dispatch }) {
       try {
+        dispatch('toggleLoader', true, { root: true })
         const popularFilms = await popularFilmsApi.getFilms()
-        context.commit('getPopularFilms', popularFilms.data.results)
+        commit('getPopularFilms', popularFilms.data.results)
       } catch (err) {
-        console.log(err)
-        context.commit('getPopularFilmsError', err)
+        commit('getPopularFilmsError', err)
+      } finally {
+        dispatch('toggleLoader', false, { root: true })
       }
     }
     // async getFilm (context, { id }) {

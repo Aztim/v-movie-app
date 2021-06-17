@@ -1,6 +1,8 @@
 <template>
   <div>
     <ErrorMessage v-if="error"/>
+     <Loader v-if="loader" />
+
     <div v-if="actorData" class="container mx-auto px-4 py-16 flex">
       <div class="flex-none">
         <img :src="'https://image.tmdb.org/t/p/w300/' + actorData.profile_path" alt=""/>
@@ -109,10 +111,11 @@
 <script>
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
+import Loader from '@/components/loader'
 
 export default {
   name: 'film-data',
-  components: { ErrorMessage },
+  components: { ErrorMessage, Loader },
   data () {
     return {}
   },
@@ -121,7 +124,8 @@ export default {
       actorData: state => state.popularActorData.actorData,
       credits: state => state.popularActorData.credits,
       socialDetails: state => state.popularActorData.socialDetails,
-      error: state => state.popularActorData.error
+      error: state => state.popularActorData.error,
+      loader: state => state.loader.isShowLoader
     })
   },
   mounted () {

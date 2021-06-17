@@ -17,13 +17,15 @@ export default {
   },
 
   actions: {
-    async getActors (context, page) {
+    async getActors ({ commit, dispatch }, page) {
       try {
+        dispatch('toggleLoader', true, { root: true })
         const popularActors = await actors.getActors(page)
-        console.log(popularActors.data.results)
-        context.commit('getPopularActors', popularActors.data.results)
+        commit('getPopularActors', popularActors.data.results)
       } catch (err) {
-        context.commit('getPopularActorsError', err)
+        commit('getPopularActorsError', err)
+      } finally {
+        dispatch('toggleLoader', false, { root: true })
       }
     }
   }

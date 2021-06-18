@@ -3,7 +3,7 @@ import popularFilmsApi from '@/api/films'
 export default {
   namespaced: true,
   state: {
-    error: null,
+    // error: null,
     filmData: null
   },
 
@@ -21,7 +21,7 @@ export default {
   },
 
   actions: {
-    async getFilm ({ commit, dispatch }, { id }) {
+    async getFilm ({ commit, dispatch }, id) {
       commit('getFilmDataStart')
       try {
         dispatch('toggleLoader', true, { root: true })
@@ -29,7 +29,8 @@ export default {
         // const payload = { key1: filmData.data, key2: filmCredits.cast }
         commit('getFilmDataSuccess', filmData.data)
       } catch (err) {
-        commit('getFilmDataFailure', err)
+        // commit('getFilmDataFailure', err)
+        dispatch('toggleError', err, { root: true })
       } finally {
         dispatch('toggleLoader', false, { root: true })
       }

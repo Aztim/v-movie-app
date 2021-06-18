@@ -124,12 +124,12 @@ export default {
       actorData: state => state.popularActorData.actorData,
       credits: state => state.popularActorData.credits,
       socialDetails: state => state.popularActorData.socialDetails,
-      error: state => state.popularActorData.error,
+      error: state => state.error.isShowError,
       loader: state => state.loader.isShowLoader
     })
   },
   mounted () {
-    this.$store.dispatch('popularActorData/getActor', { id: this.$route.params.id })
+    this.$store.dispatch('popularActorData/getActor', this.$route.params.id)
   },
   methods: {
     movieImage (movie) {

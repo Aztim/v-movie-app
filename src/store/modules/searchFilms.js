@@ -12,7 +12,7 @@ export default {
   },
 
   actions: {
-    async getSearchFilms (context, data) {
+    async getSearchFilms ({ commit }, data) {
       try {
         const searchData = await popularFilmsApi.getsearchResults(data)
         console.log(searchData)
@@ -20,7 +20,7 @@ export default {
         // search = searchData.results.filter(function (p) {
         //   return p.title.includes(data.toUpperCase())
         // })
-        context.commit('getSearchSuccess', searchData.results)
+        commit('getSearchSuccess', searchData.results)
       } catch (err) {
         console.log('error')
       }

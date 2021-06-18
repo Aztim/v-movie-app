@@ -73,7 +73,7 @@ export default {
   computed: {
     ...mapState({
       filmData: state => state.popularFilmData.filmData,
-      error: state => state.popularFilms.error,
+      error: state => state.error.isShowError,
       loader: state => state.loader.isShowLoader
     })
   },
@@ -88,7 +88,7 @@ export default {
   methods: {
     fetchMovie (movieId) {
       console.log(movieId)
-      this.$store.dispatch('popularFilmData/getFilm', { id: movieId })
+      this.$store.dispatch('popularFilmData/getFilm', movieId)
     }
   },
   mounted () {

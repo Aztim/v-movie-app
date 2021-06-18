@@ -7,6 +7,7 @@ import popularActorData from './modules/popularActorData'
 import searchFilms from './modules/searchFilms'
 import upcomingMovies from './modules/upcomingMovies'
 import loader from './modules/loader'
+import error from './modules/error'
 
 Vue.use(Vuex)
 
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     popularActorData,
     searchFilms,
     upcomingMovies,
-    loader
+    loader,
+    error
   }
 })

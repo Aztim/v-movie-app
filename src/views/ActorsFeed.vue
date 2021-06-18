@@ -48,7 +48,7 @@ export default {
   computed: {
     ...mapState({
       actors: state => state.popularActors.data,
-      error: state => state.popularActors.error,
+      error: state => state.error.isShowError,
       loader: state => state.loader.isShowLoader
     })
   },

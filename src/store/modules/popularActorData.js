@@ -3,7 +3,6 @@ import popularActorsApi from '@/api/actors'
 export default {
   namespaced: true,
   state: {
-    error: null,
     actorData: null,
     credits: null,
     socialDetails: null
@@ -32,9 +31,8 @@ export default {
   },
 
   actions: {
-    async getActor ({ commit, dispatch }, { id }) {
+    async getActor ({ commit, dispatch }, id) {
       commit('getActorDataStart')
-      // context.commit('getCreditsDataStart')
       try {
         dispatch('toggleLoader', true, { root: true })
         const actorData = await popularActorsApi.getActorData(id)
@@ -45,7 +43,8 @@ export default {
         commit('getCombinedCreditsSuccess', credits.data.cast.slice(0, 5))
         commit('getSocialDetailsSuccess', socialDetails.data)
       } catch (err) {
-        commit('getActorDataFailure', err)
+        // commit('getActorDataFailure', err)
+        dispatch('toggleError', err, { root: true })
       } finally {
         dispatch('toggleLoader', false, { root: true })
       }

@@ -2,9 +2,8 @@
  <div class="container mx-auto px-4 pt-16">
    <ErrorMessage v-if="error"/>
    <Loader v-if="loader" />
-
     <div class="popular-movies">
-      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies{{ loader }}</h2>
+      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies</h2>
       <div v-if="films" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <div
           class="mt-8"
@@ -48,7 +47,7 @@ export default {
   computed: {
     ...mapState({
       films: state => state.popularFilms.data,
-      error: state => state.popularFilms.error,
+      error: state => state.error.isShowError,
       loader: state => state.loader.isShowLoader
     })
   },

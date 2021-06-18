@@ -4,7 +4,7 @@ export default {
   namespaced: true,
   state: {
     data: null,
-    error: null,
+    // error: null,
     search: null
   },
 
@@ -34,7 +34,9 @@ export default {
         const popularFilms = await popularFilmsApi.getFilms()
         commit('getPopularFilms', popularFilms.data.results)
       } catch (err) {
-        commit('getPopularFilmsError', err)
+        // commit('getPopularFilmsError', err)
+        console.log(err)
+        dispatch('toggleError', err, { root: true })
       } finally {
         dispatch('toggleLoader', false, { root: true })
       }

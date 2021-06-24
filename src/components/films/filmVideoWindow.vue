@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mt-12">
+    <!-- <div class="mt-12"> -->
       <button
         class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 hover:bg-orange-600 transition ease-in-out duration-150"
         @click="showVideoWindow"
@@ -8,15 +8,7 @@
         <i class="far fa-play-circle"></i>
           <span class="ml-2">Play Trailer</span>
       </button>
-      <button
-        class="items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 ml-5 hover:bg-orange-600 transition ease-in-out duration-150"
-        @click="showVideoWindow"
-      >
-        <i class="far fa-heart"></i>
-          <span class="ml-2">Favorite</span>
-      </button>
-    </div>
-
+    <!-- </div> -->
     <div
       style="background-color: rgba(0, 0, 0, .5);"
       class="fixed top-0 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto"

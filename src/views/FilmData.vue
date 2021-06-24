@@ -40,10 +40,15 @@
             </div>
           </div>
         </div>
-        <VideoWindow
-          :trailer="filmData.videos"
-        />
 
+        <div class="mt-12 flex ">
+          <VideoWindow
+            :trailer="filmData.videos"
+          />
+          <Favorites
+            :trailer="filmData.videos"
+          />
+        </div>
       </div>
     </div>
 
@@ -60,13 +65,14 @@
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
 import VideoWindow from '@/components/films/filmVideoWindow'
+import Favorites from '@/components/addToFavorites'
 import Actors from '@/components/films/filmActors.vue'
 import FilmImages from '@/components/films/filmImages.vue'
 import Loader from '@/components/loader'
 
 export default {
   name: 'film-data',
-  components: { VideoWindow, Actors, FilmImages, ErrorMessage, Loader },
+  components: { VideoWindow, Actors, FilmImages, ErrorMessage, Loader, Favorites },
   data () {
     return {}
   },

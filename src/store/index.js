@@ -4,6 +4,7 @@ import popularFilms from './modules/popularFilms'
 import popularFilmData from './modules/popularFilmData'
 import popularActors from './modules/popularActors'
 import popularActorData from './modules/popularActorData'
+import favoriteMovies from './modules/favoriteMovies'
 import searchFilms from './modules/searchFilms'
 import upcomingMovies from './modules/upcomingMovies'
 import loader from './modules/loader'
@@ -17,6 +18,7 @@ export default new Vuex.Store({
     popularFilms,
     popularActors,
     popularActorData,
+    favoriteMovies,
     searchFilms,
     upcomingMovies,
     loader,

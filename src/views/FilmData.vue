@@ -45,8 +45,8 @@
           <VideoWindow
             :trailer="filmData.videos"
           />
-          <Favorites
-            :trailer="filmData.videos"
+          <FavoritesButton
+            :id="filmData.id"
           />
         </div>
       </div>
@@ -65,14 +65,14 @@
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
 import VideoWindow from '@/components/films/filmVideoWindow'
-import Favorites from '@/components/addToFavorites'
+import FavoritesButton from '@/components/addToFavorites'
 import Actors from '@/components/films/filmActors.vue'
 import FilmImages from '@/components/films/filmImages.vue'
 import Loader from '@/components/loader'
 
 export default {
   name: 'film-data',
-  components: { VideoWindow, Actors, FilmImages, ErrorMessage, Loader, Favorites },
+  components: { VideoWindow, Actors, FilmImages, ErrorMessage, Loader, FavoritesButton },
   data () {
     return {}
   },
@@ -87,13 +87,12 @@ export default {
     '$route.params.id': {
       handler () {
         this.fetchMovie(this.$route.params.id)
-        // console.log('test2')
       }
     }
   },
   methods: {
     fetchMovie (movieId) {
-      console.log(movieId)
+      // console.log(movieId)
       this.$store.dispatch('popularFilmData/getFilm', movieId)
     }
   },

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     addToFavorite (id) {
-      this.$store.dispatch('addToFavoriteMoviesIdsList', id)
+      this.$store.dispatch('favoriteMovies/addToFavoriteMoviesIdsList', id)
     }
   }
 }

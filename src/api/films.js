@@ -26,8 +26,12 @@ const getsearchResults = search => {
   return axios.get(`/search/movie?query=${search}&api_key=${apiKey}&language=en-US=`).then(response => response.data)
 }
 
-const getUpcomingMovies = search => {
+const getUpcomingMovies = () => {
   return axios.get(`/movie/upcoming?api_key=${apiKey}&language=en-US=`).then(response => response.data)
+}
+
+const getFavoriteMovies = id => {
+  return axios.get(`/movie/${id}?api_key=${apiKey}&language=en-US`).then(response => response.data)
 }
 
 export default {
@@ -36,5 +40,6 @@ export default {
   getFilmData,
   getFilmCredit,
   getsearchResults,
-  getUpcomingMovies
+  getUpcomingMovies,
+  getFavoriteMovies
 }

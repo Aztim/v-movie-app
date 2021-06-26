@@ -92,7 +92,7 @@ export default {
   },
   methods: {
     fetchMovie (movieId) {
-      // console.log(movieId)
+      console.log(typeof (movieId))
       this.$store.dispatch('popularFilmData/getFilm', movieId)
     }
   },

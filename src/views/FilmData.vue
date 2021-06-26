@@ -64,8 +64,8 @@
 <script>
 import ErrorMessage from '@/components/errorMessage'
 import { mapState } from 'vuex'
-import VideoWindow from '@/components/films/filmVideoWindow'
-import FavoritesButton from '@/components/addToFavorites'
+import VideoWindow from '@/components/films/filmVideoWindowButton'
+import FavoritesButton from '@/components/addToFavoritesButton'
 import Actors from '@/components/films/filmActors.vue'
 import FilmImages from '@/components/films/filmImages.vue'
 import Loader from '@/components/loader'

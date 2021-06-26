@@ -5,8 +5,8 @@
       @click="addToFavorite(id)"
     >
       <span class="ml-2">Add to </span>
-      <i :class="[ isFavorite ? 'far fa-heart' : 'fas fa-heart']"></i>
-      <!-- <i :class="{ 'far-heart': isFavorite, 'fas fa-heart': isFavorite}"></i> -->
+      <!-- <i :class="[ isFavorite ? 'far fa-heart' : 'fas fa-heart']"></i> -->
+      <!-- <i :class="[ isFavorite ? 'far fa-heart' : 'fas fa-heart']"></i> -->
     </button>
   </div>
 </template>

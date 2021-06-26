@@ -14,6 +14,11 @@ export default {
     addToFavoriteMoviesIdsList (state, id) {
       state.favoriteMoviesIds.push(id)
     },
+    removeFromFavoriteMoviesIdsList (state, id) {
+      const index = state.favoriteMoviesIds.indexOf(id)
+      state.favoriteMoviesIds.splice(index, 1)
+      localStorage.setItem('favoriteMoviesIds', JSON.stringify(state.favoriteMoviesIds))
+    },
     saveFavoriteMoviesDetails (state, payload) {
       state.favoriteMoviesDetails.push(payload)
     },
@@ -30,27 +35,14 @@ export default {
         commit('addToFavoriteMoviesIdsList', id)
         localStorage.setItem('favoriteMoviesIds', JSON.stringify(state.favoriteMoviesIds))
       }
+      commit('removeFromFavoriteMoviesIdsList', id)
     },
-    // async getFavoriteMoviesIdsFromAPI ({ commit, state }) {
-    //   try {
-    //     if (state.favoriteMoviesIds.length !== 0) {
-    //       const arrayOfIds = state.favoriteMoviesIds
-    //       for (let i = 0; i < arrayOfIds.length; i++) {
-    //         const fm = await getFavoriteMovies(arrayOfIds[i])
-    //         console.log(fm)
 
-    //         commit('saveFavoriteMoviesDetails', fm)
-    //       }
-    //     }
-    //   } catch (err) {
-    //     console.log(err)
-    //   }
-    // }
     async getFavoriteMoviesIdsFromAPI ({ commit, state, dispatch }) {
       try {
         commit('clearMovieDetails', [])
         dispatch('toggleLoader', true, { root: true })
-        if (state.favoriteMoviesIds.length !== 0) {
+        if (state.favoriteMoviesIds) {
           const arrayOfIds = state.favoriteMoviesIds
           for (let i = 0; i < arrayOfIds.length; i++) {
             const fm = await popularFilmsApi.getFilmData(arrayOfIds[i])

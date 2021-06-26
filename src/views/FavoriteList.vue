@@ -27,6 +27,7 @@
           </div>
         </div>
       </div>
+      <h2 v-show="favorite == false" class="uppercase tracking-wider text-yellow-500 text-lg font-semibold">There is nothing so far !</h2>
     </div>
   </div>
 </template>
@@ -35,10 +36,16 @@
 import { mapState } from 'vuex'
 import ErrorMessage from '@/components/errorMessage'
 import Loader from '@/components/loader'
+
 export default {
   name: 'favoriteFilms',
   components: {
     ErrorMessage, Loader
+  },
+  data () {
+    return {
+      test: true
+    }
   },
   mounted () {
     this.$store.commit('favoriteMovies/loadIdsFromLocalStorage')
@@ -46,13 +53,13 @@ export default {
   },
   computed: {
     ...mapState({
-      favorite: state => state.favoriteMovies.favoriteMoviesDetails
-      // ids: state => state.favoriteMovies.favoriteMoviesIds
+      favorite: state => state.favoriteMovies.favoriteMoviesDetails,
+      error: state => state.error.isShowError,
+      loader: state => state.loader.isShowLoader
     })
   }
 }
 </script>
 
 <style>
-
 </style>

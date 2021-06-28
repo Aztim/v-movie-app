@@ -8,16 +8,20 @@ export default {
   },
   getters: {
     hasFilm: state => id => state.favoriteMoviesIds.some(fm => fm === id)
+    // hasFilm: state => id => state.favoriteMoviesIds.find(fm => fm.id === id)
+    // test: state => id => Boolean(state.favoriteMoviesIds.some(fm => fm === id))
   },
 
   mutations: {
     addToFavoriteMoviesIdsList (state, id) {
       state.favoriteMoviesIds.push(id)
+      // state.toggleClass = true
     },
     removeFromFavoriteMoviesIdsList (state, id) {
       const index = state.favoriteMoviesIds.indexOf(id)
       state.favoriteMoviesIds.splice(index, 1)
       localStorage.setItem('favoriteMoviesIds', JSON.stringify(state.favoriteMoviesIds))
+      // state.toggleClass = false
     },
     saveFavoriteMoviesDetails (state, payload) {
       state.favoriteMoviesDetails.push(payload)
@@ -34,8 +38,9 @@ export default {
       if (!getters.hasFilm(id)) {
         commit('addToFavoriteMoviesIdsList', id)
         localStorage.setItem('favoriteMoviesIds', JSON.stringify(state.favoriteMoviesIds))
+      } else {
+        commit('removeFromFavoriteMoviesIdsList', id)
       }
-      commit('removeFromFavoriteMoviesIdsList', id)
     },
 
     async getFavoriteMoviesIdsFromAPI ({ commit, state, dispatch }) {

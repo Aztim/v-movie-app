@@ -92,8 +92,8 @@ export default {
   },
   methods: {
     fetchMovie (movieId) {
-      console.log(typeof (movieId))
       this.$store.dispatch('popularFilmData/getFilm', movieId)
+      this.$store.commit('favoriteMovies/loadIdsFromLocalStorage')
     }
   },
   mounted () {

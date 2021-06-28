@@ -5,7 +5,7 @@
 
     <div class="popular-movies">
       <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Movies</h2>
-      <div v-if="favorite" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div v-if="favorite" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
         <div
           class="mt-8"
           href="#"
@@ -13,7 +13,7 @@
           :key="index"
         >
           <router-link :to="{ name:'filmData', params:{ id:film.id }}">
-            <img :src="'https://image.tmdb.org/t/p/w500/' + film.backdrop_path" alt="poster" class="hover:opacity-75 transition ease-in-out duration-150">
+            <img :src="'https://image.tmdb.org/t/p/w500/' + film.poster_path" alt="poster" class="hover:opacity-75 transition ease-in-out duration-150">
           </router-link>
           <div class="mt-2">
             <router-link :to="{ name:'filmData', params:{id: film.id }}" class="text-lg mt-2 hover:text-gray:300">
@@ -24,6 +24,7 @@
               <span class="ml-1">{{ film.vote_average * 10 + '%' }}</span>
               <span class="mx-2"> | </span>
               <span>{{ film.release_date }}</span>
+              <DeleteButton />
             </div>
           </div>
         </div>
@@ -37,11 +38,12 @@
 import { mapState } from 'vuex'
 import ErrorMessage from '@/components/errorMessage'
 import Loader from '@/components/loader'
+import DeleteButton from '@/components/deleteButton'
 
 export default {
   name: 'favoriteFilms',
   components: {
-    ErrorMessage, Loader
+    ErrorMessage, Loader, DeleteButton
   },
   data () {
     return {

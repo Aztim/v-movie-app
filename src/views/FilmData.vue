@@ -47,6 +47,7 @@
           />
           <FavoritesButton
             :id="filmData.id"
+            :iconSize="iconSize"
           />
         </div>
       </div>
@@ -104,4 +105,7 @@ export default {
 </script>
 
 <style>
+.iconSize {
+  font-size: 25px;
+}
 </style>

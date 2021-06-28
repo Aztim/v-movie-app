@@ -1,13 +1,11 @@
 <template>
-<div>
-  <button
-    @click="addToFavorite"
-    class="tooltip justify-center  w-10 bg-orange-500 text-gray-900 rounded font-semibold  py-3 ml-5 hover:bg-orange-600 transition ease-in-out duration-150"
-    >
+  <div>
+  <button  @click="addToFavorite" class="tooltip inline-flex items-center justify-center w-12 h-12 ml-5  transition-colors duration-150  rounded-full focus:shadow-outline hover:bg-gray-800">
      <span class="tooltiptext">{{ text }}</span>
-      <i :class="[ isFavorite ? 'fas fa-heart' : 'far fa-heart']" class="uppercase"></i>
+    <i :class="[ isFavorite ? 'fas fa-heart' : 'far fa-heart', 'iconSize']" ></i>
   </button>
-</div>
+
+  </div>
 </template>
 
 <script>
@@ -19,8 +17,7 @@ export default {
     }
   },
   data () {
-    return {
-    }
+    return {}
   },
   computed: {
     isFavorite () {
@@ -39,14 +36,13 @@ export default {
 </script>
 
 <style>
-.fa-heart {
-  font-size: 20px;
+button {
+  border-style: none;
 }
 
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {

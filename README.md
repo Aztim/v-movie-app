@@ -4,7 +4,7 @@
 ![Снимок экрана от 2020-04-26 05-06-51](https://user-images.githubusercontent.com/56195913/93720464-cf00fe80-fb91-11ea-9432-af5c086faca0.png)
 ![Снимок экрана от 2020-09-20 19-24-10](https://user-images.githubusercontent.com/56195913/93720467-d7f1d000-fb91-11ea-8c10-ef17777bd9c0.png)
 
-![Tech](https://user-images.githubusercontent.com/56195913/123803684-2be5ce00-d8f5-11eb-902b-162452c69a78.png)
+𝐖𝐡𝐚𝐭 𝐈 𝐮𝐬𝐞𝐝 ?
 ## Project setup
 ```
 npm install

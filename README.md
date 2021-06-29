@@ -6,7 +6,8 @@
 
 𝐖𝐡𝐚𝐭 𝐈 𝐮𝐬𝐞𝐝 ?
 
-![Снимок экрана в 2021-06-29 16-17-47_cut-photo ru](https://user-images.githubusercontent.com/56195913/123804555-fd1c2780-d8f5-11eb-9852-28799669cd2d.png)
+![test_cut-photo ru](https://user-images.githubusercontent.com/56195913/123805432-bda20b00-d8f6-11eb-8e32-354f0171ee88.png)
+
 
 
 

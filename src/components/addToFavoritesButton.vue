@@ -1,11 +1,8 @@
 <template>
-  <div>
   <button  @click="addToFavorite" class="tooltip inline-flex items-center justify-center w-12 h-12 ml-5  transition-colors duration-150  rounded-full focus:shadow-outline hover:bg-gray-800">
      <span class="tooltiptext">{{ text }}</span>
-    <i :class="[ isFavorite ? 'fas fa-heart' : 'far fa-heart', 'iconSize']" ></i>
+    <i :class="[ isFavorite ? 'fas fa-heart' : 'far fa-heart', 'iconSize']" :style="{ fontSize : iconSize + 'px'}"></i>
   </button>
-
-  </div>
 </template>
 
 <script>
@@ -14,6 +11,10 @@ export default {
     id: {
       type: Number,
       required: true
+    },
+    iconSize: {
+      type: Number,
+      default: 20
     }
   },
   data () {

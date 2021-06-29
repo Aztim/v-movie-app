@@ -5,10 +5,10 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div
             class="mt-8"
-            v-for="(image, index) in images"
+            v-for="(image, index) in images.slice(0,6)"
             :key="index"
           >
-            <div v-if="index < 9">
+            <div>
               <img @click="popUp" :src="'https://image.tmdb.org/t/p/w500/' + image.file_path" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
             </div>
           </div>

@@ -7,21 +7,25 @@
 
 <script>
 import Header from '@/components/header.vue'
+
 export default {
   name: 'App',
   components: {
     Header
   },
   data: () => ({
-    posterBg: ''
-  }),
-  methods: {
-    onChangePoster (poster) {
-      this.posterBg = poster
-    }
-  }
+  })
 }
 </script>
 
 <style>
+.fa-star {
+    color: yellow;
+  }
+.fa-heart {
+  color: #FF0000;
+}
+.far.fa-heart {
+color: #DC143C
+}
 </style>

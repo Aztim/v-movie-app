@@ -1,11 +1,12 @@
 <template>
- <div id="example" class="container mx-auto px-4 pt-16 mb-56">
+ <div id="example" class="container mx-auto px-4 pt-1  mb-56">
     <ErrorMessage v-if="error"/>
     <h2 class="uppercase
       tracking-wider
       text-orange-500
       text-lg
-      font-semibold"
+      font-semibold
+      "
     >
       Upcoming Movies
     </h2>
@@ -54,11 +55,6 @@ export default {
   created () {
     this.$store.dispatch('upcomingMovies/getUpcomingMovies')
   }
-  // watch: {
-  //   movies () {
-  //     this.upcomingMovies = this.movies
-  //   }
-  // }
 }
 </script>
 

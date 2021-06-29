@@ -14,7 +14,6 @@ export default {
     },
     getActorDataSuccess (state, payload) {
       state.actorData = payload
-      // state.filmCredit = payload.key2
     },
     getCombinedCreditsSuccess (state, payload) {
       state.credits = payload
@@ -25,9 +24,6 @@ export default {
     getActorDataStart (state) {
       state.actorData = null
     }
-    // getCreditsDataStart (state) {
-    //   state.credits = null
-    // }
   },
 
   actions: {

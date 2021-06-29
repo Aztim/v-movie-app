@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-4 py-16">
+    <div class="container mx-auto px-4 py-1">
       <ErrorMessage v-if="error"/>
       <Loader v-if="loader" />
 
@@ -53,7 +53,6 @@ export default {
     })
   },
   mounted () {
-    // this.$store.dispatch('popularActors/getActors')
     this.fetchActors(this.currentPage)
   },
   methods: {

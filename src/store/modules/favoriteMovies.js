@@ -15,13 +15,13 @@ export default {
   mutations: {
     addToFavoriteMoviesIdsList (state, id) {
       state.favoriteMoviesIds.push(id)
-      // state.toggleClass = true
     },
     removeFromFavoriteMoviesIdsList (state, id) {
       const index = state.favoriteMoviesIds.indexOf(id)
       state.favoriteMoviesIds.splice(index, 1)
+      state.favoriteMoviesDetails = state.favoriteMoviesDetails.filter(f => f.id !== id)
+
       localStorage.setItem('favoriteMoviesIds', JSON.stringify(state.favoriteMoviesIds))
-      // state.toggleClass = false
     },
     saveFavoriteMoviesDetails (state, payload) {
       state.favoriteMoviesDetails.push(payload)

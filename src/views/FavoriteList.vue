@@ -1,11 +1,12 @@
 <template>
- <div class="container mx-auto px-4 pt-16">
+ <div class="container mx-auto px-4 pt-1">
    <ErrorMessage v-if="error"/>
    <Loader v-if="loader" />
+    <h2 v-if="!favorite.length" class="uppercase tracking-wider text-yellow-500 text-lg font-semibold">There is nothing so far !</h2>
 
     <div class="popular-movies">
       <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Movies</h2>
-      <div v-if="favorite" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
         <div
           class="mt-8"
           href="#"
@@ -24,12 +25,12 @@
               <span class="ml-1">{{ film.vote_average * 10 + '%' }}</span>
               <span class="mx-2"> | </span>
               <span>{{ film.release_date }}</span>
-              <DeleteButton />
+
+              <FavoritesButton :iconSize="20"  :id="film.id" />
             </div>
           </div>
         </div>
       </div>
-      <h2 v-show="favorite == false" class="uppercase tracking-wider text-yellow-500 text-lg font-semibold">There is nothing so far !</h2>
     </div>
   </div>
 </template>
@@ -38,17 +39,15 @@
 import { mapState } from 'vuex'
 import ErrorMessage from '@/components/errorMessage'
 import Loader from '@/components/loader'
-import DeleteButton from '@/components/deleteButton'
+import FavoritesButton from '@/components/addToFavoritesButton'
 
 export default {
   name: 'favoriteFilms',
   components: {
-    ErrorMessage, Loader, DeleteButton
+    ErrorMessage, Loader, FavoritesButton
   },
   data () {
-    return {
-      // test: true
-    }
+    return {}
   },
   mounted () {
     this.$store.commit('favoriteMovies/loadIdsFromLocalStorage')
@@ -60,6 +59,7 @@ export default {
       error: state => state.error.isShowError,
       loader: state => state.loader.isShowLoader
     })
+
   }
 }
 </script>

@@ -17,7 +17,6 @@
       <ul class="suggestions" v-if="showSearchResult">
         <li :key="index" v-for="(result, index) in searchResult">
           <router-link
-            v-if="index < 10"
             :to="{ name:'filmData', params:{ id:result.id }}"
             @click.native="showSearchResult = false"
             class="flex items-center border-b border-gray-500 p-1"
@@ -96,4 +95,7 @@ export default {
 </script>
 
 <style scoped>
+.absolute {
+  z-index: 2;
+}
 </style>

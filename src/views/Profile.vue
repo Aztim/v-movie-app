@@ -1,6 +1,5 @@
 <template>
   <div class="container mx-auto px-4 py-6">
-    <!-- <div class="md:flex justify-between py-20 px-10 bg-indigo-600 text-indigo-100"> -->
     <div class="md:flex justify-between py-20 px-10">
 
       <div class="md:w-1/2">

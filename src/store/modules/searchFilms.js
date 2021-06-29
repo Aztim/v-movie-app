@@ -15,12 +15,7 @@ export default {
     async getSearchFilms ({ commit }, data) {
       try {
         const searchData = await popularFilmsApi.getsearchResults(data)
-        console.log(searchData)
-        // let search = []
-        // search = searchData.results.filter(function (p) {
-        //   return p.title.includes(data.toUpperCase())
-        // })
-        commit('getSearchSuccess', searchData.results)
+        commit('getSearchSuccess', searchData.results.slice(0, 10))
       } catch (err) {
         console.log('error')
       }

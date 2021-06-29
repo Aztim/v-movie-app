@@ -4,7 +4,6 @@ export default {
   namespaced: true,
   state: {
     data: null
-    // error: null
   },
 
   mutations: {
@@ -23,7 +22,6 @@ export default {
         const popularActors = await actors.getActors(page)
         commit('getPopularActors', popularActors.data.results)
       } catch (err) {
-        // commit('getPopularActorsError', err)
         dispatch('toggleError', err, { root: true })
       } finally {
         dispatch('toggleLoader', false, { root: true })

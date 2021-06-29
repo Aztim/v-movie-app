@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <div class="mr-2"
         :key="index"
-        v-for="(actor, index) in actors"
+        v-for="(actor, index) in actors.slice(0,8)"
       >
         <div v-if="index < 8">
           <router-link

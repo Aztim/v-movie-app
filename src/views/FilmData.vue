@@ -41,13 +41,13 @@
           </div>
         </div>
 
-        <div class="mt-12 flex ">
+        <div class="test mt-12 flex ">
           <VideoWindow
             :trailer="filmData.videos"
           />
           <FavoritesButton
             :id="filmData.id"
-            :iconSize="iconSize"
+            :iconSize="25"
           />
         </div>
       </div>
@@ -98,14 +98,13 @@ export default {
     }
   },
   mounted () {
-    // this.$store.dispatch('popularFilmData/getFilm', { id: this.$route.params.id })
     this.fetchMovie(this.$route.params.id)
   }
 }
 </script>
 
 <style>
-.iconSize {
-  font-size: 25px;
+.test {
+z-index: 999;
 }
 </style>

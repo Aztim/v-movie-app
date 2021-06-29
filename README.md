@@ -5,6 +5,11 @@
 ![Снимок экрана от 2020-09-20 19-24-10](https://user-images.githubusercontent.com/56195913/93720467-d7f1d000-fb91-11ea-8c10-ef17777bd9c0.png)
 
 𝐖𝐡𝐚𝐭 𝐈 𝐮𝐬𝐞𝐝 ?
+
+![Снимок экрана в 2021-06-29 16-17-47_cut-photo ru](https://user-images.githubusercontent.com/56195913/123804555-fd1c2780-d8f5-11eb-9852-28799669cd2d.png)
+
+
+
 ## Project setup
 ```
 npm install

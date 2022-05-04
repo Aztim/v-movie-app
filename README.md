@@ -3,8 +3,6 @@
 
 https://user-images.githubusercontent.com/56195913/166823526-1d164abf-386a-405a-8966-bdaf25cb134a.mp4
 
-![Снимок экрана от 2020-04-26 05-06-51](https://user-images.githubusercontent.com/56195913/93720464-cf00fe80-fb91-11ea-9432-af5c086faca0.png)
-![Снимок экрана от 2020-09-20 19-24-10](https://user-images.githubusercontent.com/56195913/93720467-d7f1d000-fb91-11ea-8c10-ef17777bd9c0.png)
 
 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐭𝐫𝐲 𝐢𝐭 𝐡𝐞𝐫𝐞 🌈™
 https://movie-app-13848.firebaseapp.com/

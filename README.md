@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/56195913/166823526-1d164abf-386a-405a-
 
 𝗬𝗼𝘂 𝗰𝗮𝗻 𝘁𝗿𝘆 𝗶𝘁 𝗵𝗲𝗿𝗲💻
 
-themoviedb перестал работать в РФ, данные больше не подгружаются.
+<img src="https://x-lines.ru/letters/i/cyrillicbasic/0477/5484ed/20/0/qtwgk5mxq3wsk3dnrdem9wfi4gypbpqto8eafwfo4n71bwcy4napbcqoz5eafwfo4gbpddby4n3nbwfy4n1naegosuembwf74n67dn6oswopbcqoz5emzwcc4grpbpjy4n67bpjy4n97bxsosuem8wcy4gb7bpsosdea7wcn4gy7dd3q.png">
 
 https://movie-app-13848.firebaseapp.com/
 

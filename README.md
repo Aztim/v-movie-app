@@ -7,8 +7,7 @@ https://user-images.githubusercontent.com/56195913/166823526-1d164abf-386a-405a-
 
 
 𝗬𝗼𝘂 𝗰𝗮𝗻 𝘁𝗿𝘆 𝗶𝘁 𝗵𝗲𝗿𝗲💻
-
-https://movie-app-13848.firebaseapp.com/
+https://movie-app-14f23.web.app/
 
 🆆🅷🅰🆃 🅸 🆄🆂🅴🅳 ?
 
